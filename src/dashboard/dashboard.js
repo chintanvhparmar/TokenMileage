@@ -8,7 +8,10 @@ const el = (tag, props = {}, ...children) => {
   return e;
 };
 const fmt = (n) => (n >= 1e6 ? `${(n / 1e6).toFixed(1)}M` : n >= 1e3 ? `${Math.round(n / 1e3)}k` : String(n));
-const plural = (n, one, many = `${one}s`) => `${n} ${n === 1 ? one : many}`;
+// The consequence in pacing advice, in bold red (same as the on-page card).
+const CONSEQUENCE = /((?:\$[\d,.]+[kM]? \(\d+%\)|\d+%) will go unused|you'll reach the limit around [^.]+? before it resets)/;
+const emphasize = (text) => String(text).split(CONSEQUENCE).map((part, i) => (i % 2 ? el('strong', { className: 'alert' }, part) : part));
+const plural =(n, one, many = `${one}s`) => `${n} ${n === 1 ? one : many}`;
 
 function periodStart(p) {
   const now = new Date();
@@ -115,7 +118,7 @@ function renderPacing(a) {
     el('div', { className: 'pace-scale' },
       el('span', { textContent: `${p.used_pct}% used` }),
       el('span', { textContent: `${p.period_elapsed_pct}% of the period gone` })),
-    el('p', { className: 'pace-text', textContent: a.text }),
+    el('p', { className: 'pace-text' }, emphasize(a.text)),
     p.projected_pct_at_reset != null ? el('p', { className: 'hint', textContent: `At this pace: ${p.projected_pct_at_reset}% of the allowance used by the reset.` }) : null,
   );
 }

@@ -69,7 +69,14 @@ export async function evaluate({ site, prompt, modelLabel, thread, usage }) {
   result.revised_prompt = cleanRevision(result.revised_prompt, req);
   // Safety net (bench case powerbi-plan, 2026-10-27): a new chat can't be made fresher, so no
   // "start a new chat" checkbox there, whatever the model said.
-  if (!thread?.turns) result.recommend.fresh_chat = false;
+  // Same for a short chat (2026-10-30: "new chat" suggested after a 1-turn greeting): re-sending a few
+  // hundred tokens of history costs next to nothing, so leaving it isn't worth the click. Drop the
+  // model's tip about it too, so the card doesn't argue with its own checkbox.
+  const SHORT_THREAD_TOKENS = 2000;
+  if (!thread?.turns || (thread.approx_tokens ?? 0) < SHORT_THREAD_TOKENS) {
+    if (result.recommend.fresh_chat && thread?.turns) result.tips = result.tips.filter((t) => !/\b(new|fresh) (chat|thread|conversation)\b/i.test(t));
+    result.recommend.fresh_chat = false;
+  }
   const out = mode === 'codes'
     ? applyRules(result, catalogue, req.currentModel, req.currentEffort, rules)
     : asIs(result, catalogue, req.currentModel);

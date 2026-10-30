@@ -81,3 +81,4 @@ main > section:not(.card) { display: flex; flex-direction: column; gap: 12px; }
 .chip.up { background: var(--accent-soft); color: var(--accent-deep); font-weight: 700; }
 .chip.sent { background: var(--accent-soft); color: var(--accent-deep); }
 @media (max-width: 680px) { .feed li { grid-template-columns: 1fr; gap: 4px; } .feed .chips { justify-content: flex-start; } }
+.pace-text .alert { color: var(--bad); font-weight: 700; }

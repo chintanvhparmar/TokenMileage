@@ -63,8 +63,10 @@ export async function getCatalogue(site, { currentLabel } = {}) {
   const seen = seenAll[site];
 
   const names = new Map(); // name -> picker description
-  if (!seen?.fullScanAt) known.forEach((k) => names.set(k.label, ''));
   Object.values(seen?.models ?? {}).forEach((m) => names.set(m.name, m.description));
+  // The config's current lineup is always included: claude.ai's 2026-10-29 picker layout made the menu
+  // read miss models (only Haiku was kept), and Evaluate then had nothing to compare against.
+  known.forEach((k) => { if (![...names.keys()].some((n) => n.toLowerCase() === k.label.toLowerCase())) names.set(k.label, ''); });
   // The model the picker shows right now is available even if the last menu read missed it
   // (2026-10-29: claude.ai's new picker layout, the scan dropped the current model).
   const current = String(currentLabel ?? '').replace(/\s+/g, ' ').match(/^(?:Claude )?([A-Z][a-z]+(?: [A-Z][a-z]+)? \d+(?:\.\d+)*)\b/)?.[1];

@@ -1,6 +1,7 @@
 // "Mileage": what TokenMileage changed, for the outcome summary on the options page.
 // Ids, efforts, flags and numbers only - never prompt text, chat titles or reply content.
 import { getCatalogue } from './models.js';
+import { loadConfig } from '../shared/config.js';
 
 const KEY = 'outcomes';
 const MAX_ENTRIES = 3000;
@@ -61,8 +62,15 @@ function modelMix(evals, switched, tierOf) {
 export async function getMileage({ sinceTs = 0, site = 'claude' } = {}) {
   const [{ [KEY]: log = [] }, catalogue] = await Promise.all([chrome.storage.local.get(KEY), getCatalogue(site)]);
   const byId = new Map(catalogue.map((m) => [m.id, m]));
-  const tierOf = (id) => (TIERS.includes(byId.get(id)?.tier) ? byId.get(id).tier : null);
-  const label = (id) => byId.get(id)?.label ?? id;
+  const families = (await loadConfig('models')).sites?.[site]?.families ?? {};
+  // Models no longer in the picker (older entries in the log): name and size from the id,
+  // e.g. "claude-sonnet-4-6" -> "Sonnet 4.6", tier of the sonnet family.
+  const parsed = (id) => {
+    const m = String(id ?? '').match(/^[a-z]+-([a-z]+)-(\d+(?:-\d+)*)$/);
+    return m ? { label: `${m[1][0].toUpperCase()}${m[1].slice(1)} ${m[2].replace(/-/g, '.')}`, tier: families[m[1]]?.tier } : null;
+  };
+  const tierOf = (id) => [byId.get(id)?.tier, parsed(id)?.tier].find((t) => TIERS.includes(t)) ?? null;
+  const label = (id) => byId.get(id)?.label ?? parsed(id)?.label ?? id;
   const rows = log.filter((e) => e.ts >= sinceTs);
   const evals = rows.filter((e) => e.kind === 'evaluate');
   const applies = rows.filter((e) => e.kind === 'apply');

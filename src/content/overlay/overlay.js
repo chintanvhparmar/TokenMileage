@@ -72,6 +72,10 @@
     return el;
   }
 
+  // The consequence in usage advice, in bold red: "$288 (58%) will go unused", "reach the limit around Fri".
+  const CONSEQUENCE = /((?:\$[\d,.]+[kM]? \(\d+%\)|\d+%) will go unused|you'll reach the limit around [^.]+? before it resets)/;
+  const emphasize = (text) => String(text).split(CONSEQUENCE).map((part, i) => (i % 2 ? h('strong', { class: 'bad' }, part) : part));
+
   const TOP_GAP = 76; // px kept free at the top of the window (claude.ai's chat title bar is ~70px)
 
   globalThis.TM = globalThis.TM || {};
@@ -375,7 +379,7 @@
       const [cls, label] = USAGE_BADGE[advice.status] ?? ['', 'Usage'];
       showCard(
         h('div', { class: 'head' }, h('span', { class: 'rec' }, advice.title), h('span', { class: `badge ${cls}` }, label)),
-        h('div', {}, advice.text),
+        h('div', {}, emphasize(advice.text)),
         advice.tips.length ? h('ul', {}, advice.tips.map((t) => h('li', {}, t))) : null,
         h('div', { class: 'muted' },
           read ? `${read}${advice.source === 'page' ? ' from Settings → Usage' : ''}. ` : '',
