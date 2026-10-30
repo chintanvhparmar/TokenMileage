@@ -1,0 +1,48 @@
+{
+  "_note": "Nebius Token Factory settings. IDs confirmed via GET /models (2026-10-21); prices, tok/s and processing regions from the Token Factory console public-endpoint cards (2026-10-22). Public endpoints can change region and price at any time - re-check before the README cost numbers. The base URL can be overridden on the options page; model choice is config-only (taskModels).",
+  "baseUrl": "https://api.tokenfactory.us-central1.nebius.com/v1",
+  "_baseUrlAlternatives": ["https://api.tokenfactory.nebius.com/v1"],
+  "_modelsNote": "Which model each feature uses is set in taskModels; name is shown on the options page. Order: smallest first.",
+  "models": {
+    "nano": {
+      "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "name": "Nemotron 3 Nano",
+      "pricePerMTokens": { "input": 0.06, "output": 0.24 },
+      "console": { "tokPerSec": 60, "region": "eu-north1", "checked": "2026-10-22" }
+    },
+    "lightning": {
+      "id": "nvidia/Nemotron-3_5-Lightning",
+      "name": "Nemotron 3.5 Lightning",
+      "pricePerMTokens": { "input": 0.06, "output": 0.24 },
+      "console": { "tokPerSec": 314.12, "region": "eu-north1", "checked": "2026-10-22" }
+    },
+    "super": {
+      "id": "nvidia/nemotron-3-super-120b-a12b",
+      "name": "Nemotron 3 Super",
+      "pricePerMTokens": { "input": 0.30, "cachedInput": 0.06, "output": 0.90 },
+      "console": { "tokPerSec": 127, "region": "us-central1", "checked": "2026-10-22" }
+    },
+    "ultra": {
+      "id": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "name": "Nemotron 3 Ultra",
+      "pricePerMTokens": { "input": 1.00, "cachedInput": 0.12, "output": 3.00 },
+      "console": { "tokPerSec": 523, "region": "us-central1", "checked": "2026-10-22" }
+    }
+  },
+  "_taskModelsNote": "Which Nemotron each feature uses (a key of models; default lightning). evaluate -> ultra, chosen from bench/results 2026-10-22: Ultra reasoning-off 9/10 cases, 0.8 s, ~$0.0016/call vs Lightning 4/10, 7.1 s. research -> super, chosen from bench/results 2026-10-27 (11 claude.ai models, agent mode): Super and Ultra 10/10 prices agree, Nano 9/10, Lightning 10/10 as agent but 8/10 as pipeline; Super 1.5 Tavily credits, 3.8 s, ~$0.0023 per model vs Ultra 2.4 credits, 7.5 s, ~$0.013.",
+  "taskModels": { "evaluate": "ultra", "research": "super" },
+  "_researchNote": "Model research agent (Nemotron + Tavily tools). maxToolCalls caps Tavily calls per model; recheckDays re-researches done models; retryHours retries failed ones.",
+  "research": { "maxToolCalls": 4, "maxSteps": 6, "recheckDays": 30, "retryHours": 24, "pageChars": 6000 },
+  "_dedicatedNote": "Dedicated endpoints (not used): $2.00-$9.70 per GPU hour (L40S $2.00, H100 $4.70, H200 $5.60, B200 $8.70, B300 $9.70; eu-north1, console 2026-10-22). One H100 24/7 is about $3,400/month.",
+  "_reasoningOffNote": "bench probe 2026-10-22: chat_template_kwargs.enable_thinking=false gives 0 reasoning on Nano/Lightning/Super/Ultra; a '/no_think' system prefix has no effect (same reasoning as no switch). Reasoning is ON by default.",
+  "reasoningOff": {
+    "systemPrefix": "",
+    "extraBody": { "chat_template_kwargs": { "enable_thinking": false } }
+  },
+  "_jsonModeNote": "Sends response_format {type: json_object}. Set to false if Token Factory returns HTTP 400 for it; the JSON is still validated either way.",
+  "jsonMode": true,
+  "_streamNote": "2026-10-21: non-streaming Lightning calls hung >30s while streaming answered in ~8s. Not reproduced in the 2026-10-22 bench probe (non-stream fine on all 4 Nemotron models). Kept on: it also gives time-to-first-token.",
+  "stream": true,
+  "timeoutMs": 30000,
+  "maxPromptChars": 4000
+}

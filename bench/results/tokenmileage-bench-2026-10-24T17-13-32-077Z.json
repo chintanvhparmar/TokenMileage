@@ -1,0 +1,784 @@
+{
+  "started": "2026-10-24T17:12:43.860Z",
+  "env": {
+    "baseUrl": "https://api.tokenfactory.us-central1.nebius.com/v1",
+    "stream": true,
+    "jsonMode": true,
+    "reasoningOff": {
+      "systemPrefix": "",
+      "extraBody": {
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      }
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  },
+  "probe": [],
+  "quality": [
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "dir-command",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1682,
+      "ttftMs": 1651,
+      "completionTokens": 128,
+      "promptTokens": 1188,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Small model handles one-line factual lookups",
+          "Low effort avoids extended thinking cost"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "reformat-table",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1685,
+      "ttftMs": 1684,
+      "completionTokens": 127,
+      "promptTokens": 1208,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "reformat",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Haiku 5.5 is 3× cheaper for simple reformatting"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "list-files-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1686,
+      "ttftMs": 1686,
+      "completionTokens": 117,
+      "promptTokens": 1182,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use low effort for simple commands"
+        ],
+        "est_relative_usage_saving": "low"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1049,
+      "ttftMs": 1043,
+      "completionTokens": 133,
+      "promptTokens": 1215,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids 20k tokens of unrelated history",
+          "Web search needed for live stock data"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1081,
+      "ttftMs": 1081,
+      "completionTokens": 133,
+      "promptTokens": 1215,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "artifact",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids 20k-token history re-read",
+          "Web search needed for live stock data"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "user-guide-in-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1115,
+      "ttftMs": 1114,
+      "completionTokens": 139,
+      "promptTokens": 1193,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "writing",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Sonnet 5.5 costs 3/5 of Opus for standard writing",
+          "Output as artifact saves re-copying later"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 935,
+      "ttftMs": 934,
+      "completionTokens": 119,
+      "promptTokens": 1189,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Web search needed for live headlines"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1004,
+      "ttftMs": 1003,
+      "completionTokens": 128,
+      "promptTokens": 1216,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Large model needed for multi-step system design",
+          "Artifact output keeps schema reusable"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1041,
+      "ttftMs": 1040,
+      "completionTokens": 149,
+      "promptTokens": 1194,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids re-reading 48k tokens of unrelated history",
+          "Haiku 5.5 at low effort is 5x cheaper than Opus 5.5 high"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1064,
+      "ttftMs": 1010,
+      "completionTokens": 134,
+      "promptTokens": 1968,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "summarise",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Summarisation fits medium model well",
+          "Current Opus is 5x cost of Haiku"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": false
+      },
+      "pass": false,
+      "ms": 1082,
+      "ttftMs": 1082,
+      "completionTokens": 146,
+      "promptTokens": 1255,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "code",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Concurrency bugs need deep reasoning; large model + high effort prevents re-asks",
+          "Thread is short and on-topic; keeping history avoids re-explaining the bug"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    }
+  ],
+  "summary": [
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "cases": 11,
+      "allPass": 10,
+      "errors": 0,
+      "byCheck": {
+        "json": {
+          "pass": 11,
+          "of": 11
+        },
+        "complexity": {
+          "pass": 11,
+          "of": 11
+        },
+        "tools": {
+          "pass": 11,
+          "of": 11
+        },
+        "fresh": {
+          "pass": 11,
+          "of": 11
+        },
+        "consistent": {
+          "pass": 11,
+          "of": 11
+        },
+        "saving": {
+          "pass": 11,
+          "of": 11
+        },
+        "tipsMax3": {
+          "pass": 11,
+          "of": 11
+        },
+        "noAnswerLeak": {
+          "pass": 11,
+          "of": 11
+        },
+        "noContradiction": {
+          "pass": 11,
+          "of": 11
+        },
+        "noFormatTip": {
+          "pass": 11,
+          "of": 11
+        },
+        "tipsMatchThread": {
+          "pass": 10,
+          "of": 11
+        },
+        "codesOnly": {
+          "pass": 0,
+          "of": 0
+        }
+      },
+      "avgMs": 1220,
+      "avgTtftMs": 1212,
+      "avgCompletionTokens": 132,
+      "avgReasoningChars": 0
+    }
+  ],
+  "cases": [
+    {
+      "id": "dir-command",
+      "note": "seen live 2026-10-21: tips answered the question (use dir, add /b)",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "answerLeak": "\\bdir\\b|\\/b\\b|\\bls\\b|get-childitem|gci\\b"
+      }
+    },
+    {
+      "id": "list-files-on-haiku",
+      "note": "seen live 2026-10-24 (Ultra): already on Haiku, card said Saving: high and gave a thread-length tip in a new chat",
+      "modelLabel": "Haiku 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "answerLeak": "\\bdir\\b|\\/b\\b|\\bls\\b|get-childitem|gci\\b"
+      }
+    },
+    {
+      "id": "reformat-table",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "allowFormat": true,
+        "answerLeak": "\\|\\s*red|\\bcolou?r\\s*\\|"
+      }
+    },
+    {
+      "id": "user-guide-in-thread",
+      "note": "seen live 2026-10-22: refers back to the conversation",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "standard"
+        ],
+        "tools": false,
+        "fresh": false
+      }
+    },
+    {
+      "id": "stocks-on-haiku",
+      "note": "seen live 2026-10-22: complex/research but recommended Haiku, saving medium",
+      "modelLabel": "Haiku 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": true,
+        "fresh": true,
+        "answerLeak": "nvidia|nvda|msft|microsoft|p\\/e|discounted cash"
+      }
+    },
+    {
+      "id": "stocks-on-opus",
+      "note": "seen live 2026-10-22: tip told user to switch to Sonnet while card said Opus",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": true,
+        "fresh": true,
+        "answerLeak": "nvidia|nvda|msft|microsoft|p\\/e|discounted cash"
+      }
+    },
+    {
+      "id": "schema-design",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": false,
+        "fresh": false,
+        "answerLeak": "tenant_id|foreign key|uuid"
+      }
+    },
+    {
+      "id": "capital-in-long-thread",
+      "modelLabel": "Opus 5.5 High",
+      "thread": {
+        "turns": 32,
+        "approx_tokens": 48000,
+        "title": "Python data pipeline refactor"
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": true,
+        "answerLeak": "canberra|sydney"
+      }
+    },
+    {
+      "id": "news-today",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple",
+          "standard"
+        ],
+        "tools": true,
+        "fresh": false
+      }
+    },
+    {
+      "id": "summarise-pasted",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple",
+          "standard"
+        ],
+        "tools": false,
+        "fresh": false,
+        "allowFormat": true,
+        "answerLeak": "margins? (will )?stabili[sz]e|logistics"
+      }
+    },
+    {
+      "id": "debug-race",
+      "modelLabel": "Haiku 5.5 Low",
+      "thread": {
+        "turns": 4,
+        "approx_tokens": 6000,
+        "title": "Order service bug"
+      },
+      "expect": {
+        "complexity": [
+          "standard",
+          "complex"
+        ],
+        "tools": false,
+        "fresh": false,
+        "answerLeak": "idempoten|lock|synchroni[sz]ed|transaction"
+      }
+    }
+  ]
+}

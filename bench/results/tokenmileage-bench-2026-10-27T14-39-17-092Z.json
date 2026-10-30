@@ -1,0 +1,4047 @@
+{
+  "started": "2026-10-27T14:23:19.275Z",
+  "env": {
+    "baseUrl": "https://api.tokenfactory.us-central1.nebius.com/v1",
+    "stream": true,
+    "jsonMode": true,
+    "reasoningOff": {
+      "systemPrefix": "",
+      "extraBody": {
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      }
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  },
+  "probe": [],
+  "quality": [],
+  "summary": [],
+  "research": [
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Haiku 4.5",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "high-volume operations",
+        "parallelized execution"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 1,
+        "output": 5
+      },
+      "context_window_tokens": 200000,
+      "released": "2025-10",
+      "sources": [
+        "https://platform.claude.com/docs/en/models/haiku-4-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Haiku 4.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 5919,
+        "completion_tokens": 188,
+        "nemotron_ms": 5598,
+        "est_cost_usd": 0.00040026,
+        "ms": 6851
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Haiku 5.5",
+      "ok": true,
+      "best_for": [
+        "quick answers",
+        "high-volume cost-sensitive tasks",
+        "speed-sensitive tasks like live customer support"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 0.1,
+        "output": 0.5
+      },
+      "context_window_tokens": 100000,
+      "released": "2026-10",
+      "sources": [
+        "https://www.anthropic.com/claude-haiku-5-5"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Haiku 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 6210,
+        "completion_tokens": 192,
+        "nemotron_ms": 5374,
+        "est_cost_usd": 0.00041868,
+        "ms": 10028
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Opus 4.6",
+      "ok": true,
+      "best_for": [
+        "complex coding",
+        "long context tasks",
+        "agentic workflows"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 10,
+        "output": 37.5
+      },
+      "context_window_tokens": 1000000,
+      "released": "2024-06",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-6"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 4604,
+        "completion_tokens": 192,
+        "nemotron_ms": 5252,
+        "est_cost_usd": 0.00032232,
+        "ms": 6575
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Opus 3",
+      "ok": true,
+      "best_for": [
+        "complex reasoning",
+        "long context",
+        "high fidelity document analysis"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": null,
+      "context_window_tokens": 200000,
+      "released": "2024-03",
+      "sources": [
+        "https://www-cdn.anthropic.com/files/4zrzovbb/website/3684c2faafb97418665782cea0001f439f74b1d2.pdf"
+      ],
+      "checks": {
+        "price_in_text": false
+      },
+      "method": "agent",
+      "tool_calls": 2,
+      "queries": [
+        "Anthropic Opus 3 model pricing and what it is best for",
+        "Anthropic Opus 3 pricing page"
+      ],
+      "stats": {
+        "tavily_calls": 3,
+        "tavily_credits": 2,
+        "nemotron_calls": 3,
+        "prompt_tokens": 9868,
+        "completion_tokens": 299,
+        "nemotron_ms": 7800,
+        "est_cost_usd": 0.00066384,
+        "ms": 12068
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Opus 4.7",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "long documents",
+        "data-rich interfaces"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 200000,
+      "released": "2024-05",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-7"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 4.7 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 4566,
+        "completion_tokens": 187,
+        "nemotron_ms": 4943,
+        "est_cost_usd": 0.00031884,
+        "ms": 6094
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Opus 4.8",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "long documents",
+        "fast simple tasks",
+        "multimodal reasoning"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-05",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-8",
+        "https://platform.claude.com/docs/en/models/opus-4-8/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 4.8 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 6656,
+        "completion_tokens": 233,
+        "nemotron_ms": 6027,
+        "est_cost_usd": 0.00045528,
+        "ms": 7374
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Opus 5",
+      "ok": true,
+      "best_for": [
+        "production-ready code",
+        "complex document creation",
+        "computer use",
+        "vision tasks"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-07",
+      "sources": [
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/news/claude-opus-5",
+        "https://platform.claude.com/docs/en/models/opus-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 7535,
+        "completion_tokens": 252,
+        "nemotron_ms": 7587,
+        "est_cost_usd": 0.00051258,
+        "ms": 8824
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Opus 5.5",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "long-running tasks",
+        "knowledge work"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 4,
+        "output": 20
+      },
+      "context_window_tokens": 200000,
+      "released": "2026-09",
+      "sources": [
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/claude-opus-5-5",
+        "https://platform.claude.com/docs/en/about-claude/pricing"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 7432,
+        "completion_tokens": 253,
+        "nemotron_ms": 3228,
+        "est_cost_usd": 0.00050664,
+        "ms": 7501
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Sonnet 4.6",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "long-context reasoning",
+        "agent planning"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 3,
+        "output": 15
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-sonnet-4-6"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Sonnet 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 4717,
+        "completion_tokens": 179,
+        "nemotron_ms": 2401,
+        "est_cost_usd": 0.00032598,
+        "ms": 3545
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Sonnet 5",
+      "ok": true,
+      "best_for": [
+        "customer-facing agents",
+        "production coding workflows",
+        "content generation at scale",
+        "real-time research tasks"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 200000,
+      "released": "2024-05",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Sonnet 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 4687,
+        "completion_tokens": 189,
+        "nemotron_ms": 3555,
+        "est_cost_usd": 0.00032658,
+        "ms": 4875
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "agent",
+      "model": "Sonnet 5.5",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "long documents",
+        "fast simple tasks"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": "2024-05",
+      "sources": [
+        "https://www.anthropic.com/claude-sonnet-5-5"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Sonnet 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 5250,
+        "completion_tokens": 190,
+        "nemotron_ms": 3299,
+        "est_cost_usd": 0.0003606,
+        "ms": 6593
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Haiku 4.5",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "parallelized execution",
+        "sub-agents",
+        "high-volume operations"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 1,
+        "output": 5
+      },
+      "context_window_tokens": 200000,
+      "released": "2025-01",
+      "sources": [
+        "https://www.anthropic.com/claude/haiku",
+        "https://www.anthropic.com/news/claude-haiku-4-5",
+        "https://platform.claude.com/docs/en/models/haiku-4-5/overview",
+        "https://platform.claude.com/docs/en/about-claude/pricing"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Haiku 4.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3604,
+        "completion_tokens": 179,
+        "nemotron_ms": 3602,
+        "est_cost_usd": 0.0002592,
+        "ms": 5103
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Haiku 5.5",
+      "ok": true,
+      "best_for": [
+        "quick answers",
+        "fast simple tasks",
+        "low-cost tasks"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 0.1,
+        "output": 0.5
+      },
+      "context_window_tokens": 100000,
+      "released": "2026-10",
+      "sources": [
+        "https://anthropic.com/claude-haiku-5-5?asof=2026-10-08",
+        "https://www.anthropic.com/claude-haiku-5-5?scan=202610080724",
+        "https://www.anthropic.com/claude-haiku-5-5?amp=1",
+        "https://www.anthropic.com/claude-haiku-5-5"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Haiku 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4969,
+        "completion_tokens": 204,
+        "nemotron_ms": 2371,
+        "est_cost_usd": 0.0003471,
+        "ms": 3922
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Opus 3",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "agents",
+        "complex document analysis"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": null,
+      "context_window_tokens": 128000,
+      "released": "2025-11",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-5",
+        "https://www.anthropic.com/claude/opus"
+      ],
+      "checks": {
+        "price_in_text": false
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 3 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3642,
+        "completion_tokens": 124,
+        "nemotron_ms": 1491,
+        "est_cost_usd": 0.00024828,
+        "ms": 3003
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Opus 4.6",
+      "ok": true,
+      "best_for": [
+        "deep reasoning",
+        "codebase refactoring",
+        "agent coordination"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 10,
+        "output": 37.5
+      },
+      "context_window_tokens": 1000000,
+      "released": "2025-04",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-6",
+        "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "https://www.anthropic.com/claude/opus"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3650,
+        "completion_tokens": 153,
+        "nemotron_ms": 1587,
+        "est_cost_usd": 0.00025572,
+        "ms": 3430
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Opus 4.7",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "enterprise document analysis",
+        "complex multi-step tasks"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2024-06",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://www.anthropic.com/claude/opus"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.7 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3714,
+        "completion_tokens": 131,
+        "nemotron_ms": 1155,
+        "est_cost_usd": 0.00025428,
+        "ms": 2398
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Opus 4.8",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "long documents",
+        "fast simple tasks"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-05",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-8",
+        "https://platform.claude.com/docs/en/models/opus-4-8/overview",
+        "https://www.anthropic.com/news/claude-sonnet-5"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.8 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4534,
+        "completion_tokens": 159,
+        "nemotron_ms": 1698,
+        "est_cost_usd": 0.00031019999999999995,
+        "ms": 3142
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Opus 5",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "knowledge work",
+        "long documents",
+        "computer use"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-08",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-5",
+        "https://www.anthropic.com/claude/opus",
+        "https://platform.claude.com/docs/en/models/opus-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3820,
+        "completion_tokens": 146,
+        "nemotron_ms": 3101,
+        "est_cost_usd": 0.00026424,
+        "ms": 4475
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Opus 5.5",
+      "ok": true,
+      "best_for": [
+        "long-running agentic coding",
+        "knowledge work",
+        "vision and computer use"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 4,
+        "output": 20
+      },
+      "context_window_tokens": 1000000,
+      "released": "2024-05",
+      "sources": [
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/claude-opus-5-5"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4316,
+        "completion_tokens": 136,
+        "nemotron_ms": 1265,
+        "est_cost_usd": 0.0002916,
+        "ms": 2828
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Sonnet 4.6",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "long-context reasoning",
+        "agentic tasks"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 3,
+        "output": 15
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "https://www.anthropic.com/news/claude-sonnet-5",
+        "https://www.anthropic.com/news/claude-opus-4-6"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3726,
+        "completion_tokens": 152,
+        "nemotron_ms": 1641,
+        "est_cost_usd": 0.00026004,
+        "ms": 2923
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Sonnet 5",
+      "ok": true,
+      "best_for": [
+        "customer-facing agents",
+        "production coding workflows",
+        "content generation at scale",
+        "real-time research tasks"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-06",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet?lang=us",
+        "https://www.anthropic.com/claude/sonnet?=",
+        "https://www.anthropic.com/claude/sonnet?utm_src=aihome.run",
+        "https://www.anthropic.com/claude/sonnet?ref=niuxai"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3878,
+        "completion_tokens": 192,
+        "nemotron_ms": 1708,
+        "est_cost_usd": 0.00027875999999999997,
+        "ms": 3341
+      }
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "requested": "pipeline",
+      "model": "Sonnet 5.5",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "agents",
+        "knowledge work"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": "2024-05",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet",
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4064,
+        "completion_tokens": 147,
+        "nemotron_ms": 1677,
+        "est_cost_usd": 0.00027912,
+        "ms": 2928
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Haiku 4.5",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "real-time chat",
+        "parallelized execution",
+        "high-volume operations"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 1,
+        "output": 5
+      },
+      "context_window_tokens": 200000,
+      "released": "2025-10",
+      "sources": [
+        "https://www.anthropic.com/claude/haiku",
+        "https://www.anthropic.com/news/claude-haiku-4-5",
+        "https://platform.claude.com/docs/en/models/haiku-4-5/overview",
+        "https://www.anthropic.com/claude-haiku-4-5-system-card"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Haiku 4.5 model pricing and what it is best for",
+        "Anthropic Haiku 4.5 size class small medium large lineup"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 3,
+        "nemotron_calls": 4,
+        "prompt_tokens": 21548,
+        "completion_tokens": 385,
+        "nemotron_ms": 5311,
+        "est_cost_usd": 0.00138528,
+        "ms": 10013
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Haiku 5.5",
+      "ok": true,
+      "best_for": [
+        "quick answers",
+        "high-volume cost-sensitive tasks",
+        "speed-sensitive tasks",
+        "subagent coding work"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 0.1,
+        "output": 0.5
+      },
+      "context_window_tokens": 100000,
+      "released": "2026-10",
+      "sources": [
+        "https://anthropic.com/claude-haiku-5-5"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Haiku 5.5 model pricing and what it is best for",
+        "Anthropic Haiku 5.5 context window size released date"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 2,
+        "nemotron_calls": 4,
+        "prompt_tokens": 16801,
+        "completion_tokens": 317,
+        "nemotron_ms": 4529,
+        "est_cost_usd": 0.00108414,
+        "ms": 10355
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Opus 4.6",
+      "ok": true,
+      "best_for": [
+        "deep reasoning",
+        "coding",
+        "agentic workflows",
+        "long documents"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-6",
+        "https://www.anthropic.com/transparency"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Opus 4.6 model pricing and what it is best for",
+        "Anthropic Opus 4.6 pricing per million tokens context window",
+        "Anthropic Opus 4.6 release date and best for tasks"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 4,
+        "nemotron_calls": 4,
+        "prompt_tokens": 15477,
+        "completion_tokens": 297,
+        "nemotron_ms": 4703,
+        "est_cost_usd": 0.0009999,
+        "ms": 12993
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Opus 3",
+      "ok": true,
+      "best_for": [
+        "complex reasoning",
+        "coding",
+        "long documents",
+        "agentic tasks"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": null,
+      "context_window_tokens": null,
+      "released": "2024-03",
+      "sources": [
+        "https://www.anthropic.com/news/deprecation-updates-opus-3",
+        "https://www.anthropic.com/news/claude-3-family",
+        "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+      ],
+      "checks": {},
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Opus 3 model pricing and what it is best for",
+        "Anthropic Opus 3 model overview capabilities best for pricing",
+        "Anthropic Opus 3 pricing per million tokens",
+        "Anthropic Opus 3 model details context window released date"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 4,
+        "nemotron_calls": 4,
+        "prompt_tokens": 13617,
+        "completion_tokens": 238,
+        "nemotron_ms": 4476,
+        "est_cost_usd": 0.00087414,
+        "ms": 15295
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Opus 4.7",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "complex multi-step tasks",
+        "professional knowledge work",
+        "agentic workflows"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://www.anthropic.com/claude/opus",
+        "https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Opus 4.7 model pricing and what it is best for",
+        "Anthropic Opus 4.7 context window size class"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 2,
+        "nemotron_calls": 4,
+        "prompt_tokens": 12930,
+        "completion_tokens": 312,
+        "nemotron_ms": 4624,
+        "est_cost_usd": 0.0008506799999999999,
+        "ms": 10251
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Opus 4.8",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "long-running tasks",
+        "complex agent workflows",
+        "codebase-scale migrations"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-05",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-8",
+        "https://platform.claude.com/docs/en/models/opus-4-8/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Opus 4.8 model pricing and what it is best for",
+        "Anthropic Opus 4.8 best for tasks description use cases"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 3,
+        "nemotron_calls": 4,
+        "prompt_tokens": 16336,
+        "completion_tokens": 305,
+        "nemotron_ms": 5042,
+        "est_cost_usd": 0.00105336,
+        "ms": 9721
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Opus 5",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "agentic tasks",
+        "professional work",
+        "long documents"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2025-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-5",
+        "https://www.anthropic.com/claude/opus"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Opus 5 model pricing and what it is best for",
+        "Anthropic Opus 5 context window size class best for tasks"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 3,
+        "nemotron_calls": 4,
+        "prompt_tokens": 13282,
+        "completion_tokens": 283,
+        "nemotron_ms": 5556,
+        "est_cost_usd": 0.00086484,
+        "ms": 11283
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Opus 5.5",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "long-running agents",
+        "complex professional work",
+        "computer use"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 4,
+        "output": 20
+      },
+      "context_window_tokens": 1000000,
+      "released": "2025-09",
+      "sources": [
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/claude-opus-5-5",
+        "https://platform.claude.com/docs/en/about-claude/pricing"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Opus 5.5 model pricing and what it is best for",
+        "Anthropic Opus 5.5 context window size class best for tasks"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 3,
+        "nemotron_calls": 4,
+        "prompt_tokens": 22310,
+        "completion_tokens": 378,
+        "nemotron_ms": 6364,
+        "est_cost_usd": 0.00142932,
+        "ms": 11369
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Sonnet 5",
+      "ok": true,
+      "best_for": [
+        "customer-facing agents",
+        "production coding workflows",
+        "content generation at scale",
+        "real-time research tasks"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": null,
+      "released": "2026-06",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet?lang=us"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Sonnet 5 model pricing and what it is best for",
+        "Anthropic Sonnet 5 context window tokens"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 2,
+        "nemotron_calls": 4,
+        "prompt_tokens": 13117,
+        "completion_tokens": 274,
+        "nemotron_ms": 4823,
+        "est_cost_usd": 0.00085278,
+        "ms": 10536
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Sonnet 4.6",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "agentic tasks",
+        "long-context reasoning",
+        "long-horizon planning"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 3,
+        "output": 15
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "https://www.anthropic.com/transparency",
+        "https://claude.com/blog/1m-context-ga"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Sonnet 4.6 model pricing and what it is best for",
+        "Anthropic Sonnet 4.6 context window tokens size class lineup",
+        "Anthropic Sonnet 4.6 release date February 2026"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 3,
+        "nemotron_calls": 4,
+        "prompt_tokens": 13846,
+        "completion_tokens": 292,
+        "nemotron_ms": 5154,
+        "est_cost_usd": 0.00090084,
+        "ms": 14456
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Haiku 4.5",
+      "ok": true,
+      "best_for": [
+        "fast coding",
+        "parallelized execution",
+        "high-volume operations",
+        "real-time applications"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 1,
+        "output": 5
+      },
+      "context_window_tokens": null,
+      "released": "2025-05",
+      "sources": [
+        "https://www.anthropic.com/claude/haiku",
+        "https://www.anthropic.com/news/claude-haiku-4-5",
+        "https://platform.claude.com/docs/en/models/haiku-4-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Haiku 4.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3604,
+        "completion_tokens": 130,
+        "nemotron_ms": 1177,
+        "est_cost_usd": 0.00024744,
+        "ms": 2739
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Haiku 5.5",
+      "ok": true,
+      "best_for": [
+        "quick answers",
+        "fast simple tasks",
+        "low-cost tasks"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 0.01,
+        "output": 0.05
+      },
+      "context_window_tokens": 100000,
+      "released": "2026-05",
+      "sources": [
+        "https://anthropic.com/claude-haiku-5-5?asof=2026-10-08",
+        "https://www.anthropic.com/claude-haiku-5-5?scan=202610080724",
+        "https://www.anthropic.com/claude-haiku-5-5?amp=1",
+        "https://www.anthropic.com/claude-haiku-5-5"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Haiku 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4969,
+        "completion_tokens": 185,
+        "nemotron_ms": 1990,
+        "est_cost_usd": 0.00034253999999999996,
+        "ms": 3582
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Opus 3",
+      "ok": true,
+      "best_for": [
+        "complex reasoning",
+        "coding",
+        "agentic workflows",
+        "long documents"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": null,
+      "context_window_tokens": 200000,
+      "released": "2025-11",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-5",
+        "https://www.anthropic.com/claude/opus"
+      ],
+      "checks": {
+        "price_in_text": false
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 3 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3642,
+        "completion_tokens": 113,
+        "nemotron_ms": 1096,
+        "est_cost_usd": 0.00024564,
+        "ms": 2367
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Opus 4.6",
+      "ok": true,
+      "best_for": [
+        "deep reasoning",
+        "codebase refactoring",
+        "agentic workflows",
+        "long documents"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 10,
+        "output": 37.5
+      },
+      "context_window_tokens": 1000000,
+      "released": "2025-06",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-6",
+        "https://www.anthropic.com/claude/opus"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3650,
+        "completion_tokens": 121,
+        "nemotron_ms": 1206,
+        "est_cost_usd": 0.00024804,
+        "ms": 2750
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "agent",
+      "model": "Sonnet 5.5",
+      "ok": true,
+      "best_for": [
+        "well-scoped everyday tasks",
+        "coding",
+        "agents",
+        "creating polished documents"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-09",
+      "sources": [
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+        "https://www.anthropic.com/claude/sonnet"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Sonnet 5.5 model pricing and what it is best for",
+        "Anthropic Sonnet 5.5 size class medium large small lineup"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 2,
+        "nemotron_calls": 5,
+        "prompt_tokens": 26652,
+        "completion_tokens": 499,
+        "nemotron_ms": 10366,
+        "est_cost_usd": 0.00171888,
+        "ms": 15833
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Opus 4.7",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "complex multi-step tasks",
+        "professional knowledge work",
+        "agentic workflows"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 200000,
+      "released": "2024-10",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://www.anthropic.com/claude/opus"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.7 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3714,
+        "completion_tokens": 117,
+        "nemotron_ms": 1556,
+        "est_cost_usd": 0.00025092,
+        "ms": 3138
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Opus 4.8",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "long documents",
+        "computer use"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-05",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-8",
+        "https://platform.claude.com/docs/en/models/opus-4-8/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.8 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4534,
+        "completion_tokens": 116,
+        "nemotron_ms": 2344,
+        "est_cost_usd": 0.00029987999999999993,
+        "ms": 3553
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Opus 5",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "knowledge work",
+        "agents",
+        "complex documents"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2025-05",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-5",
+        "https://www.anthropic.com/claude/opus",
+        "https://platform.claude.com/docs/en/models/opus-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3820,
+        "completion_tokens": 127,
+        "nemotron_ms": 1158,
+        "est_cost_usd": 0.00025968,
+        "ms": 2711
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Opus 5.5",
+      "ok": true,
+      "best_for": [
+        "long-running agentic coding",
+        "knowledge work",
+        "fast simple tasks"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 4,
+        "output": 20
+      },
+      "context_window_tokens": 200000,
+      "released": "2025-02",
+      "sources": [
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/claude-opus-5-5",
+        "https://platform.claude.com/docs/en/about-claude/pricing"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4316,
+        "completion_tokens": 129,
+        "nemotron_ms": 1587,
+        "est_cost_usd": 0.00028991999999999993,
+        "ms": 2958
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Sonnet 4.6",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "agentic tasks",
+        "long-context reasoning",
+        "computer use"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 3,
+        "output": 15
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "https://www.anthropic.com/transparency"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3726,
+        "completion_tokens": 113,
+        "nemotron_ms": 1662,
+        "est_cost_usd": 0.00025068000000000003,
+        "ms": 3047
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Sonnet 5",
+      "ok": true,
+      "best_for": [
+        "customer-facing agents",
+        "production coding workflows",
+        "content generation at scale",
+        "real-time research tasks"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": null,
+      "released": "2026-06",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet?lang=us",
+        "https://www.anthropic.com/claude/sonnet?=",
+        "https://www.anthropic.com/claude/sonnet?utm_src=aihome.run"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3878,
+        "completion_tokens": 137,
+        "nemotron_ms": 1670,
+        "est_cost_usd": 0.00026555999999999997,
+        "ms": 3037
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "requested": "pipeline",
+      "model": "Sonnet 5.5",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "agents",
+        "knowledge work",
+        "high-volume workflows"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": "2025-05",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet",
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4064,
+        "completion_tokens": 135,
+        "nemotron_ms": 1331,
+        "est_cost_usd": 0.00027624,
+        "ms": 2605
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Haiku 4.5",
+      "ok": true,
+      "best_for": [
+        "parallelized execution",
+        "sub‑agents",
+        "high‑volume operations"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 1,
+        "output": 5
+      },
+      "context_window_tokens": 200000,
+      "released": "2025-10",
+      "sources": [
+        "https://www.anthropic.com/claude/haiku",
+        "https://www.anthropic.com/news/claude-haiku-4-5",
+        "https://platform.claude.com/docs/en/models/haiku-4-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Haiku 4.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 7680,
+        "completion_tokens": 265,
+        "nemotron_ms": 2305,
+        "est_cost_usd": 0.0025425,
+        "ms": 3308
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Haiku 5.5",
+      "ok": true,
+      "best_for": [
+        "high-volume cost-sensitive tasks",
+        "quick and repetitive workloads",
+        "speed-sensitive tasks like live customer support"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 0.1,
+        "output": 0.5
+      },
+      "context_window_tokens": 200000,
+      "released": "2026-10",
+      "sources": [
+        "https://anthropic.com/claude-haiku-5-5?asof=2026-10-08"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Haiku 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 6256,
+        "completion_tokens": 221,
+        "nemotron_ms": 1898,
+        "est_cost_usd": 0.0020756999999999998,
+        "ms": 3256
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Opus 3",
+      "ok": true,
+      "best_for": [
+        "authenticity and emotional sensitivity",
+        "philosophical reflection",
+        "creative expression"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": null,
+      "context_window_tokens": null,
+      "released": "2024-03",
+      "sources": [
+        "https://www.anthropic.com/news/deprecation-updates-opus-3",
+        "https://www.anthropic.com/claude/opus"
+      ],
+      "checks": {},
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 3 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 3,
+        "prompt_tokens": 9377,
+        "completion_tokens": 329,
+        "nemotron_ms": 3417,
+        "est_cost_usd": 0.0031091999999999995,
+        "ms": 4776
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Opus 4.6",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "agents",
+        "enterprise workflows",
+        "deep reasoning"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-6",
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/transparency"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 6346,
+        "completion_tokens": 246,
+        "nemotron_ms": 2875,
+        "est_cost_usd": 0.0021252,
+        "ms": 4524
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Opus 4.7",
+      "ok": true,
+      "best_for": [
+        "financial analysis",
+        "enterprise document analysis",
+        "complex multi-step coding"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": null,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://www.anthropic.com/claude/opus",
+        "https://platform.claude.com/docs/en/about-claude/models/choosing-a-model"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 4.7 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 6052,
+        "completion_tokens": 247,
+        "nemotron_ms": 2123,
+        "est_cost_usd": 0.0020378999999999996,
+        "ms": 3384
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Opus 4.8",
+      "ok": true,
+      "best_for": [
+        "autonomous engineering workloads",
+        "agentic tasks",
+        "financial‑document workflows"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-05",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-8",
+        "https://platform.claude.com/docs/en/models/opus-4-8/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 4.8 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 6847,
+        "completion_tokens": 233,
+        "nemotron_ms": 1740,
+        "est_cost_usd": 0.0022638,
+        "ms": 2744
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Opus 5",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "complex document creation",
+        "computer use"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-07",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-5",
+        "https://platform.claude.com/docs/en/models/opus-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 6782,
+        "completion_tokens": 216,
+        "nemotron_ms": 2235,
+        "est_cost_usd": 0.002229,
+        "ms": 3617
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Opus 5.5",
+      "ok": true,
+      "best_for": [
+        "serious coding and knowledge work",
+        "financial workflows",
+        "vision and computer use"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 4,
+        "output": 20
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-09",
+      "sources": [
+        "https://www.anthropic.com/claude-opus-5-5",
+        "https://www.anthropic.com/claude/opus",
+        "https://platform.claude.com/docs/en/about-claude/pricing"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 7201,
+        "completion_tokens": 255,
+        "nemotron_ms": 3209,
+        "est_cost_usd": 0.0023898,
+        "ms": 4612
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Sonnet 4.6",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "computer use",
+        "long-context reasoning",
+        "agent planning"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 3,
+        "output": 15
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "https://www.anthropic.com/transparency"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Sonnet 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 6820,
+        "completion_tokens": 218,
+        "nemotron_ms": 2511,
+        "est_cost_usd": 0.0022421999999999997,
+        "ms": 4054
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Sonnet 5",
+      "ok": true,
+      "best_for": [
+        "customer-facing agents",
+        "production coding workflows",
+        "content generation at scale",
+        "real-time research tasks"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-06",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet?lang=us"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Sonnet 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 4811,
+        "completion_tokens": 194,
+        "nemotron_ms": 2159,
+        "est_cost_usd": 0.0016179,
+        "ms": 3348
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Haiku 4.5",
+      "ok": true,
+      "best_for": [
+        "coding sub-agents",
+        "latency-sensitive experiences",
+        "free user experiences"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 1,
+        "output": 5
+      },
+      "context_window_tokens": null,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/claude/haiku",
+        "https://www.anthropic.com/news/claude-haiku-4-5",
+        "https://platform.claude.com/docs/en/models/haiku-4-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Haiku 4.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3604,
+        "completion_tokens": 121,
+        "nemotron_ms": 1092,
+        "est_cost_usd": 0.0011901000000000001,
+        "ms": 2452
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "agent",
+      "model": "Sonnet 5.5",
+      "ok": true,
+      "best_for": [
+        "well-scoped everyday tasks",
+        "coding",
+        "agents",
+        "knowledge work"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-09",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet",
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Sonnet 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 7485,
+        "completion_tokens": 255,
+        "nemotron_ms": 3035,
+        "est_cost_usd": 0.0024749999999999998,
+        "ms": 4367
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Haiku 5.5",
+      "ok": true,
+      "best_for": [
+        "quick answers",
+        "computer use",
+        "browser use"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 0.1,
+        "output": 0.5
+      },
+      "context_window_tokens": null,
+      "released": null,
+      "sources": [
+        "https://anthropic.com/claude-haiku-5-5?asof=2026-10-08"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Haiku 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4969,
+        "completion_tokens": 95,
+        "nemotron_ms": 1398,
+        "est_cost_usd": 0.0015762,
+        "ms": 2944
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Opus 3",
+      "ok": true,
+      "best_for": [
+        "authenticity and emotional sensitivity",
+        "philosophical reflection",
+        "creative expression"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": null,
+      "context_window_tokens": null,
+      "released": "2024-03",
+      "sources": [
+        "https://www.anthropic.com/news/deprecation-updates-opus-3"
+      ],
+      "checks": {},
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 3 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 7420,
+        "completion_tokens": 176,
+        "nemotron_ms": 2601,
+        "est_cost_usd": 0.0023843999999999996,
+        "ms": 3869
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Opus 4.6",
+      "ok": true,
+      "best_for": [
+        "deepest reasoning tasks",
+        "codebase refactoring",
+        "coordinating multiple agents",
+        "enterprise workflows"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-6"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3650,
+        "completion_tokens": 102,
+        "nemotron_ms": 1212,
+        "est_cost_usd": 0.0011868,
+        "ms": 2777
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Opus 4.7",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "vision",
+        "complex multi-step tasks"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": null,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://www.anthropic.com/claude/opus"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.7 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3714,
+        "completion_tokens": 95,
+        "nemotron_ms": 1089,
+        "est_cost_usd": 0.0011997,
+        "ms": 2614
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Opus 4.8",
+      "ok": true,
+      "best_for": [
+        "computer-use agents",
+        "browser automation",
+        "financial document processing",
+        "enterprise AI"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-05",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-8",
+        "https://platform.claude.com/docs/en/models/opus-4-8/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.8 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4534,
+        "completion_tokens": 123,
+        "nemotron_ms": 1138,
+        "est_cost_usd": 0.0014709,
+        "ms": 2495
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Opus 5",
+      "ok": true,
+      "best_for": [
+        "coding and knowledge work",
+        "production-ready code",
+        "complex document creation"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/news/claude-opus-5",
+        "https://platform.claude.com/docs/en/models/opus-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3820,
+        "completion_tokens": 123,
+        "nemotron_ms": 1094,
+        "est_cost_usd": 0.0012567000000000001,
+        "ms": 2633
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Opus 5.5",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "agents",
+        "knowledge work"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 4,
+        "output": 20
+      },
+      "context_window_tokens": null,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/claude-opus-5-5"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4316,
+        "completion_tokens": 92,
+        "nemotron_ms": 922,
+        "est_cost_usd": 0.0013775999999999999,
+        "ms": 2512
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Sonnet 5",
+      "ok": true,
+      "best_for": [
+        "customer-facing agents",
+        "production coding workflows",
+        "content generation at scale",
+        "real-time research tasks"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": null,
+      "released": "2026-06",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet?lang=us"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3878,
+        "completion_tokens": 99,
+        "nemotron_ms": 1475,
+        "est_cost_usd": 0.0012524999999999997,
+        "ms": 2848
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Sonnet 4.6",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "computer use",
+        "long-context reasoning",
+        "agent planning"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 3,
+        "output": 15
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "https://www.anthropic.com/transparency"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3726,
+        "completion_tokens": 112,
+        "nemotron_ms": 1479,
+        "est_cost_usd": 0.0012185999999999998,
+        "ms": 3094
+      }
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "requested": "pipeline",
+      "model": "Sonnet 5.5",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "agents",
+        "knowledge work"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet",
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4064,
+        "completion_tokens": 122,
+        "nemotron_ms": 1164,
+        "est_cost_usd": 0.001329,
+        "ms": 3056
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Haiku 4.5",
+      "ok": true,
+      "best_for": [
+        "parallelized execution and sub-agents",
+        "high-volume operations",
+        "latency-sensitive real-time applications",
+        "coding sub-agents and agentic workflows"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 1,
+        "output": 5
+      },
+      "context_window_tokens": 200000,
+      "released": "2025-10",
+      "sources": [
+        "https://www.anthropic.com/claude/haiku",
+        "https://www.anthropic.com/news/claude-haiku-4-5",
+        "https://platform.claude.com/docs/en/models/haiku-4-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Haiku 4.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 7664,
+        "completion_tokens": 270,
+        "nemotron_ms": 3068,
+        "est_cost_usd": 0.008474,
+        "ms": 4806
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Opus 3",
+      "ok": true,
+      "best_for": [
+        "authentic conversation",
+        "emotional sensitivity",
+        "philosophical discussion",
+        "creative writing"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": null,
+      "context_window_tokens": null,
+      "released": "2024-03",
+      "sources": [
+        "https://www.anthropic.com/news/deprecation-updates-opus-3",
+        "https://www-cdn.anthropic.com/files/4zrzovbb/website/3684c2faafb97418665782cea0001f439f74b1d2.pdf"
+      ],
+      "checks": {
+        "price_in_text": false
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Opus 3 model pricing and what it is best for",
+        "Anthropic Opus 3 API pricing per million tokens input output"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 2,
+        "nemotron_calls": 4,
+        "prompt_tokens": 14260,
+        "completion_tokens": 385,
+        "nemotron_ms": 4024,
+        "est_cost_usd": 0.015414999999999998,
+        "ms": 8059
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Haiku 5.5",
+      "ok": true,
+      "best_for": [
+        "high-volume cost-sensitive tasks",
+        "quick repetitive workloads",
+        "speed-sensitive live support",
+        "subagent coding work"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 0.1,
+        "output": 0.5
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-10",
+      "sources": [
+        "https://www.anthropic.com/claude-haiku-5-5",
+        "https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Haiku 5.5 model pricing and what it is best for",
+        "Anthropic Haiku 5.5 context window tokens"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 2,
+        "nemotron_calls": 4,
+        "prompt_tokens": 16210,
+        "completion_tokens": 337,
+        "nemotron_ms": 4724,
+        "est_cost_usd": 0.017221,
+        "ms": 9926
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Opus 4.6",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "complex multi-step tasks",
+        "enterprise workflows",
+        "long-context reasoning"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-6",
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/transparency"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Opus 4.6 model pricing and what it is best for",
+        "Anthropic Opus 4.6 release date"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 4,
+        "nemotron_calls": 4,
+        "prompt_tokens": 15748,
+        "completion_tokens": 330,
+        "nemotron_ms": 4493,
+        "est_cost_usd": 0.016738,
+        "ms": 10441
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Opus 4.7",
+      "ok": true,
+      "best_for": [
+        "advanced software engineering",
+        "complex multi-step tasks",
+        "professional knowledge work",
+        "agentic reasoning over data"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-04",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://www.anthropic.com/claude/opus",
+        "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+        "https://www-cdn.anthropic.com/037f06850df7fbe871e206dad004c3db5fd50340/Claude%20Opus%204.7%20System%20Card.pdf"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Opus 4.7 model pricing and what it is best for",
+        "Anthropic Opus 4.7 context window tokens release date",
+        "Anthropic Opus 4.7 release date April 2025"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 4,
+        "nemotron_calls": 4,
+        "prompt_tokens": 17967,
+        "completion_tokens": 413,
+        "nemotron_ms": 4847,
+        "est_cost_usd": 0.019206,
+        "ms": 12708
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Opus 4.8",
+      "ok": true,
+      "best_for": [
+        "autonomous engineering workloads",
+        "agentic reasoning",
+        "computer-use and browser-agent tasks",
+        "financial-document workflows"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-05",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-8",
+        "https://platform.claude.com/docs/en/models/opus-4-8/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 4.8 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 6777,
+        "completion_tokens": 231,
+        "nemotron_ms": 2272,
+        "est_cost_usd": 0.00747,
+        "ms": 3524
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Opus 5",
+      "ok": true,
+      "best_for": [
+        "agentic coding",
+        "software engineering",
+        "scientific research",
+        "computer use"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-07",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-5",
+        "https://platform.claude.com/docs/en/models/opus-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 6810,
+        "completion_tokens": 217,
+        "nemotron_ms": 2485,
+        "est_cost_usd": 0.007461000000000001,
+        "ms": 3643
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Opus 5.5",
+      "ok": true,
+      "best_for": [
+        "long-running agentic coding",
+        "knowledge work",
+        "production-ready code",
+        "complex document creation"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 4,
+        "output": 20
+      },
+      "context_window_tokens": null,
+      "released": "2026-09",
+      "sources": [
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/claude-opus-5-5",
+        "https://platform.claude.com/docs/en/about-claude/pricing"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Opus 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 2,
+        "prompt_tokens": 8132,
+        "completion_tokens": 253,
+        "nemotron_ms": 2265,
+        "est_cost_usd": 0.008891,
+        "ms": 4804
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Sonnet 5",
+      "ok": true,
+      "best_for": [
+        "customer-facing agents",
+        "production coding workflows",
+        "content generation at scale",
+        "real-time research tasks"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-06",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet?lang=us",
+        "https://platform.claude.com/docs/en/models/sonnet-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Sonnet 5 model pricing and what it is best for",
+        "Anthropic Sonnet 5 context window tokens",
+        "Anthropic Sonnet 5 context window 1M tokens"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 3,
+        "nemotron_calls": 4,
+        "prompt_tokens": 13652,
+        "completion_tokens": 281,
+        "nemotron_ms": 3656,
+        "est_cost_usd": 0.014495,
+        "ms": 8052
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Sonnet 4.6",
+      "ok": true,
+      "best_for": [
+        "coding and software development",
+        "agentic workflows and tool use",
+        "long-context reasoning and planning",
+        "knowledge work and professional tasks"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 3,
+        "output": 15
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "https://www.anthropic.com/claude/sonnet",
+        "https://www.anthropic.com/transparency",
+        "https://claude.com/pricing",
+        "https://academy.claude.com/courses/claude-platform-101/choosing-the-right-model"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 3,
+      "queries": [
+        "Anthropic Sonnet 4.6 model pricing and what it is best for",
+        "Anthropic Sonnet 4.6 API pricing $3 $15 per million tokens",
+        "Anthropic Sonnet model lineup small medium large Opus Sonnet"
+      ],
+      "stats": {
+        "tavily_calls": 4,
+        "tavily_credits": 4,
+        "nemotron_calls": 4,
+        "prompt_tokens": 18334,
+        "completion_tokens": 378,
+        "nemotron_ms": 5847,
+        "est_cost_usd": 0.019468,
+        "ms": 12764
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "agent",
+      "model": "Sonnet 5.5",
+      "ok": true,
+      "best_for": [
+        "everyday coding tasks",
+        "agent investigation and review",
+        "design and visual work",
+        "enterprise knowledge work"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-09",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet",
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "agent",
+      "tool_calls": 1,
+      "queries": [
+        "Anthropic Sonnet 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 2,
+        "prompt_tokens": 7385,
+        "completion_tokens": 266,
+        "nemotron_ms": 2352,
+        "est_cost_usd": 0.008183,
+        "ms": 3932
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Haiku 4.5",
+      "ok": true,
+      "best_for": [
+        "parallelized execution",
+        "sub-agents",
+        "high-volume operations",
+        "latency-sensitive experiences"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 1,
+        "output": 5
+      },
+      "context_window_tokens": null,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/claude/haiku",
+        "https://www.anthropic.com/news/claude-haiku-4-5",
+        "https://platform.claude.com/docs/en/models/haiku-4-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Haiku 4.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3604,
+        "completion_tokens": 133,
+        "nemotron_ms": 815,
+        "est_cost_usd": 0.004003,
+        "ms": 2372
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Haiku 5.5",
+      "ok": true,
+      "best_for": [
+        "fast simple tasks",
+        "computer use",
+        "browser use",
+        "quick answers"
+      ],
+      "size_class": "small",
+      "api_price_per_mtok": {
+        "input": 0.1,
+        "output": 0.5
+      },
+      "context_window_tokens": null,
+      "released": "2026-10",
+      "sources": [
+        "https://anthropic.com/claude-haiku-5-5?asof=2026-10-08"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Haiku 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4969,
+        "completion_tokens": 117,
+        "nemotron_ms": 1505,
+        "est_cost_usd": 0.00532,
+        "ms": 2963
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Opus 3",
+      "ok": true,
+      "best_for": [
+        "authenticity and honesty",
+        "emotional sensitivity",
+        "philosophical monologues",
+        "whimsical phrases"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": null,
+      "context_window_tokens": null,
+      "released": "2024-03",
+      "sources": [
+        "https://www.anthropic.com/news/deprecation-updates-opus-3"
+      ],
+      "checks": {},
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 3 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3642,
+        "completion_tokens": 97,
+        "nemotron_ms": 1094,
+        "est_cost_usd": 0.003933,
+        "ms": 2365
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Opus 4.7",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "vision",
+        "complex multi-step tasks",
+        "professional knowledge work"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": null,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://www.anthropic.com/claude/opus"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.7 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3714,
+        "completion_tokens": 109,
+        "nemotron_ms": 852,
+        "est_cost_usd": 0.004041,
+        "ms": 2304
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Opus 4.6",
+      "ok": true,
+      "best_for": [
+        "codebase refactoring",
+        "coordinating multiple agents",
+        "deep reasoning tasks",
+        "enterprise workflows"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2025-06",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-6",
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/news/claude-sonnet-4-6"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3650,
+        "completion_tokens": 156,
+        "nemotron_ms": 1925,
+        "est_cost_usd": 0.004118,
+        "ms": 3514
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Opus 5",
+      "ok": true,
+      "best_for": [
+        "software engineering",
+        "agentic coding",
+        "professional knowledge work",
+        "scientific research"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2025-08",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-5",
+        "https://platform.claude.com/docs/en/models/opus-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3820,
+        "completion_tokens": 132,
+        "nemotron_ms": 1395,
+        "est_cost_usd": 0.004216,
+        "ms": 2683
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Opus 4.8",
+      "ok": true,
+      "best_for": [
+        "computer-use and browser-agent tasks",
+        "agentic reasoning and multistep questions",
+        "financial-document workflows with citation precision",
+        "long sessions requiring context and style carryover"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 5,
+        "output": 25
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-05",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-8",
+        "https://platform.claude.com/docs/en/models/opus-4-8/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 4.8 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4534,
+        "completion_tokens": 155,
+        "nemotron_ms": 2028,
+        "est_cost_usd": 0.004999,
+        "ms": 3815
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Opus 5.5",
+      "ok": true,
+      "best_for": [
+        "long-running agentic coding",
+        "knowledge work",
+        "financial analysis",
+        "vision and computer use"
+      ],
+      "size_class": "large",
+      "api_price_per_mtok": {
+        "input": 4,
+        "output": 20
+      },
+      "context_window_tokens": null,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/claude/opus",
+        "https://www.anthropic.com/claude-opus-5-5"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Opus 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4316,
+        "completion_tokens": 117,
+        "nemotron_ms": 855,
+        "est_cost_usd": 0.004667,
+        "ms": 2487
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Sonnet 4.6",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "computer use",
+        "long-context reasoning",
+        "agent planning"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 3,
+        "output": 15
+      },
+      "context_window_tokens": 1000000,
+      "released": "2026-02",
+      "sources": [
+        "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "https://www.anthropic.com/transparency"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 4.6 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3726,
+        "completion_tokens": 125,
+        "nemotron_ms": 1283,
+        "est_cost_usd": 0.004101,
+        "ms": 2779
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Sonnet 5.5",
+      "ok": true,
+      "best_for": [
+        "coding",
+        "agents",
+        "knowledge work",
+        "everyday tasks"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": 1000000,
+      "released": null,
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet",
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 5.5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 2,
+        "nemotron_calls": 1,
+        "prompt_tokens": 4064,
+        "completion_tokens": 142,
+        "nemotron_ms": 927,
+        "est_cost_usd": 0.00449,
+        "ms": 2418
+      }
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "requested": "pipeline",
+      "model": "Sonnet 5",
+      "ok": true,
+      "best_for": [
+        "customer-facing agents",
+        "production coding workflows",
+        "content generation at scale",
+        "real-time research tasks"
+      ],
+      "size_class": "medium",
+      "api_price_per_mtok": {
+        "input": 2,
+        "output": 10
+      },
+      "context_window_tokens": null,
+      "released": "2026-06",
+      "sources": [
+        "https://www.anthropic.com/claude/sonnet?lang=us",
+        "https://www.anthropic.com/claude/sonnet?="
+      ],
+      "checks": {
+        "price_in_text": true
+      },
+      "method": "pipeline",
+      "fallback_reason": "chosen",
+      "tool_calls": 0,
+      "queries": [
+        "Anthropic Sonnet 5 model pricing and what it is best for"
+      ],
+      "stats": {
+        "tavily_calls": 2,
+        "tavily_credits": 1,
+        "nemotron_calls": 1,
+        "prompt_tokens": 3878,
+        "completion_tokens": 124,
+        "nemotron_ms": 1358,
+        "est_cost_usd": 0.00425,
+        "ms": 2878
+      }
+    }
+  ],
+  "researchSummary": [
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "method": "agent",
+      "runs": 11,
+      "errors": 0,
+      "fellBack": 0,
+      "bestFor": 11,
+      "price": 10,
+      "size": 11,
+      "dropped": 1,
+      "agrees": 9,
+      "priced": 10,
+      "avgOwnToolCalls": 1.1,
+      "tavilyCredits": 15,
+      "costUsd": 0.0046115999999999996,
+      "avgMs": 7303,
+      "tokens": 69798
+    },
+    {
+      "nemotron": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "method": "pipeline",
+      "runs": 11,
+      "errors": 0,
+      "fellBack": 0,
+      "bestFor": 11,
+      "price": 10,
+      "size": 11,
+      "dropped": 1,
+      "agrees": 9,
+      "priced": 10,
+      "avgOwnToolCalls": 0,
+      "tavilyCredits": 18,
+      "costUsd": 0.0030485399999999998,
+      "avgMs": 3408,
+      "tokens": 45640
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "method": "agent",
+      "runs": 11,
+      "errors": 0,
+      "fellBack": 0,
+      "bestFor": 11,
+      "price": 10,
+      "size": 11,
+      "dropped": 0,
+      "agrees": 10,
+      "priced": 10,
+      "avgOwnToolCalls": 3,
+      "tavilyCredits": 31,
+      "costUsd": 0.012014160000000001,
+      "avgMs": 12010,
+      "tokens": 189496
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3_5-Lightning",
+      "method": "pipeline",
+      "runs": 11,
+      "errors": 0,
+      "fellBack": 0,
+      "bestFor": 11,
+      "price": 10,
+      "size": 11,
+      "dropped": 1,
+      "agrees": 8,
+      "priced": 10,
+      "avgOwnToolCalls": 0,
+      "tavilyCredits": 18,
+      "costUsd": 0.00297654,
+      "avgMs": 2953,
+      "tokens": 45340
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "method": "agent",
+      "runs": 11,
+      "errors": 0,
+      "fellBack": 0,
+      "bestFor": 11,
+      "price": 10,
+      "size": 11,
+      "dropped": 0,
+      "agrees": 10,
+      "priced": 10,
+      "avgOwnToolCalls": 1,
+      "tavilyCredits": 17,
+      "costUsd": 0.025108199999999997,
+      "avgMs": 3817,
+      "tokens": 78336
+    },
+    {
+      "nemotron": "nvidia/nemotron-3-super-120b-a12b",
+      "method": "pipeline",
+      "runs": 11,
+      "errors": 0,
+      "fellBack": 0,
+      "bestFor": 11,
+      "price": 10,
+      "size": 11,
+      "dropped": 0,
+      "agrees": 10,
+      "priced": 10,
+      "avgOwnToolCalls": 0,
+      "tavilyCredits": 18,
+      "costUsd": 0.0154425,
+      "avgMs": 2845,
+      "tokens": 48955
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "method": "agent",
+      "runs": 11,
+      "errors": 0,
+      "fellBack": 0,
+      "bestFor": 11,
+      "price": 10,
+      "size": 11,
+      "dropped": 1,
+      "agrees": 10,
+      "priced": 10,
+      "avgOwnToolCalls": 2.1,
+      "tavilyCredits": 26,
+      "costUsd": 0.14302199999999998,
+      "avgMs": 7514,
+      "tokens": 136300
+    },
+    {
+      "nemotron": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "method": "pipeline",
+      "runs": 11,
+      "errors": 0,
+      "fellBack": 0,
+      "bestFor": 11,
+      "price": 10,
+      "size": 11,
+      "dropped": 0,
+      "agrees": 10,
+      "priced": 10,
+      "avgOwnToolCalls": 0,
+      "tavilyCredits": 18,
+      "costUsd": 0.048138,
+      "avgMs": 2780,
+      "tokens": 45324
+    }
+  ],
+  "cases": [
+    {
+      "id": "dir-command",
+      "note": "seen live 2026-10-21: tips answered the question (use dir, add /b)",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "answerLeak": "\\bdir\\b|\\/b\\b|\\bls\\b|get-childitem|gci\\b"
+      }
+    },
+    {
+      "id": "list-files-on-haiku",
+      "note": "seen live 2026-10-24 (Ultra): already on Haiku, card said Saving: high and gave a thread-length tip in a new chat",
+      "modelLabel": "Haiku 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "revise": true,
+        "openChoice": [
+          "windows",
+          "linux",
+          "mac"
+        ],
+        "answerLeak": "\\bdir\\b|\\/b\\b|\\bls\\b|get-childitem|gci\\b"
+      }
+    },
+    {
+      "id": "reformat-table",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "allowFormat": true,
+        "keep": [
+          "red 3",
+          "blue 5",
+          "green 2",
+          "yellow 7"
+        ],
+        "answerLeak": "\\|\\s*red|\\bcolou?r\\s*\\|"
+      }
+    },
+    {
+      "id": "user-guide-in-thread",
+      "note": "seen live 2026-10-22: refers back to the conversation",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "standard"
+        ],
+        "tools": false,
+        "fresh": false
+      }
+    },
+    {
+      "id": "stocks-on-haiku",
+      "note": "seen live 2026-10-22: complex/research but recommended Haiku, saving medium",
+      "modelLabel": "Haiku 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": true,
+        "fresh": true,
+        "revise": true,
+        "noAdd": "\\btop \\d+|\\bexclud|\\bDCF\\b|multiples|semiconductor",
+        "answerLeak": "nvidia|nvda|msft|microsoft|p\\/e|discounted cash"
+      }
+    },
+    {
+      "id": "stocks-on-opus",
+      "note": "seen live 2026-10-22: tip told user to switch to Sonnet while card said Opus",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": true,
+        "fresh": true,
+        "revise": true,
+        "noAdd": "\\btop \\d+|\\bexclud|\\bDCF\\b|multiples|semiconductor",
+        "answerLeak": "nvidia|nvda|msft|microsoft|p\\/e|discounted cash"
+      }
+    },
+    {
+      "id": "schema-design",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": false,
+        "fresh": false,
+        "noAdd": "ledger|denormali|usage_events|\\(tenants|subscriptions,",
+        "answerLeak": "tenant_id|foreign key|uuid"
+      }
+    },
+    {
+      "id": "powerbi-plan",
+      "note": "seen live 2026-10-25 (Ultra): one-line draft expanded into a detailed brief; the user wants this level of detail",
+      "modelLabel": "Haiku 5.5 Low",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "complex",
+          "standard"
+        ],
+        "tools": false,
+        "fresh": false,
+        "revise": true
+      }
+    },
+    {
+      "id": "capital-in-long-thread",
+      "modelLabel": "Opus 5.5 High",
+      "thread": {
+        "turns": 32,
+        "approx_tokens": 48000,
+        "title": "Python data pipeline refactor"
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": true,
+        "answerLeak": "canberra|sydney"
+      }
+    },
+    {
+      "id": "news-today",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple",
+          "standard"
+        ],
+        "tools": true,
+        "fresh": false
+      }
+    },
+    {
+      "id": "summarise-pasted",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple",
+          "standard"
+        ],
+        "tools": false,
+        "fresh": false,
+        "allowFormat": true,
+        "answerLeak": "margins? (will )?stabili[sz]e|logistics"
+      }
+    },
+    {
+      "id": "debug-race",
+      "modelLabel": "Haiku 5.5 Low",
+      "thread": {
+        "turns": 4,
+        "approx_tokens": 6000,
+        "title": "Order service bug"
+      },
+      "expect": {
+        "complexity": [
+          "standard",
+          "complex"
+        ],
+        "tools": false,
+        "fresh": false,
+        "keep": [
+          "gateway.charge(o)",
+          "o.setPaid(true)"
+        ],
+        "noAdd": "race condition|constraint|thread-safe|distributed",
+        "answerLeak": "idempoten|lock|synchroni[sz]ed|transaction"
+      }
+    }
+  ]
+}

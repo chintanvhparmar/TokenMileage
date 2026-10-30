@@ -1,0 +1,37 @@
+{
+  "_note": "Per-site model catalogue. tier: small | medium | large. relative_price: estimated usage cost relative to the cheapest model on that site (1 = cheapest) - these are ESTIMATES, edit freely. aliases: lowercase text matched against the site's model picker label. Logic never hard-codes model names; it only reads this file.",
+  "_evaluateModeNote": "free = Nemotron decides model/effort/saving and writes tips (SPEC design). codes = fallback: Nemotron classifies + picks tip codes, the rules below decide the rest. Choose based on bench/ results.",
+  "evaluateMode": "free",
+  "_rulesNote": "Used in 'codes' mode, and by bench/ to score consistency. The cheapest catalogue model in the tier is recommended.",
+  "rules": {
+    "tierByComplexity": { "simple": "small", "standard": "medium", "complex": "large" },
+    "effortByComplexity": { "simple": "low", "standard": "medium", "complex": "high" },
+    "savingByUsageRatio": { "high": 3, "medium": 1.5, "low": 1.01 }
+  },
+  "sites": {
+    "claude": {
+      "_familiesNote": "Defaults for any model read from the site's picker, by the first word of its name (e.g. a new 'Sonnet 6' gets the sonnet entry). best_for here is a heuristic; researched facts (src/background/research.js, sourced from the web via Tavily) replace it.",
+      "families": {
+        "haiku":  { "tier": "small",  "relative_price": 1, "best_for": ["quick questions", "short rewrites and summaries", "simple code edits"] },
+        "sonnet": { "tier": "medium", "relative_price": 3, "best_for": ["everyday coding", "writing and analysis", "agentic tasks"] },
+        "opus":   { "tier": "large",  "relative_price": 5, "best_for": ["hard reasoning", "complex coding", "long documents"] }
+      },
+      "_researchNote": "Model research looks only at these official domains (Tavily include_domains).",
+      "research": {
+        "vendor": "Anthropic",
+        "domains": ["anthropic.com", "www.anthropic.com", "docs.anthropic.com", "claude.com", "www.claude.com", "docs.claude.com", "support.claude.com"]
+      },
+      "_modelsNote": "Fallback list until the picker has been read, and exact-model overrides (matched by id = site + name).",
+      "models": [
+        { "id": "claude-haiku-5-5", "label": "Haiku 5.5", "tier": "small", "relative_price": 1, "aliases": ["haiku"] },
+        { "id": "claude-sonnet-5-5", "label": "Sonnet 5.5", "tier": "medium", "relative_price": 3, "aliases": ["sonnet"] },
+        { "id": "claude-opus-5-5", "label": "Opus 5.5", "tier": "large", "relative_price": 5, "aliases": ["opus"] },
+        { "id": "claude-fable-5-1", "label": "Fable 5.1", "tier": "large", "relative_price": 5, "aliases": ["fable"] }
+      ]
+    },
+    "chatgpt": {
+      "_note": "Fill in when the ChatGPT reader is built (SPEC step 7).",
+      "models": []
+    }
+  }
+}

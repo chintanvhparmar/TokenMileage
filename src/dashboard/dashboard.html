@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TokenMileage · Dashboard</title>
+  <link rel="icon" href="../../icons/icon-32.png">
+  <link rel="stylesheet" href="../options/options.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="../../icons/icon-48.png" alt="" width="28" height="28">
+        <span class="brand-name">TokenMileage</span>
+      </div>
+      <span class="tagline">Get more mileage from every AI token.</span>
+      <nav class="topnav">
+        <a href="dashboard.html" aria-current="page">Dashboard</a>
+        <a href="../options/options.html">Settings</a>
+        <a href="../../bench/bench.html" target="_blank">Benchmark</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: the headline result for the period -->
+    <section class="band" aria-live="polite">
+      <div class="band-head">
+        <span class="eyebrow">Your mileage</span>
+        <label class="band-period">
+          <span class="sr">Period</span>
+          <select id="period">
+            <option value="month">This month</option>
+            <option value="30d">Last 30 days</option>
+            <option value="all">All time</option>
+          </select>
+        </label>
+      </div>
+      <div class="band-body">
+        <div class="band-main" id="hero"></div>
+        <ul class="band-stats" id="heroStats"></ul>
+      </div>
+    </section>
+
+    <!-- Why AI bills grow, and the lever TokenMileage pulls for each -->
+    <section>
+      <div class="section-head">
+        <h2>Five levers, pulled before you hit send</h2>
+        <p class="subtitle">Why chat usage grows, and what TokenMileage changed for you. Only changes you confirmed with Apply or Apply &amp; send count.</p>
+      </div>
+      <div class="levers" id="levers"></div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <div class="card-head">
+          <div>
+            <h2>Model mix</h2>
+            <p class="subtitle">Prompts you evaluated, by model size: the model you were on, and where they went.</p>
+          </div>
+        </div>
+        <div id="mix"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-head">
+          <div>
+            <h2>Plan pacing</h2>
+            <p class="subtitle">Your claude.ai allowance against how much of the period has gone.</p>
+          </div>
+        </div>
+        <div id="pacing"></div>
+      </section>
+    </div>
+
+    <section class="card">
+      <div class="card-head">
+        <div>
+          <h2>Recent changes</h2>
+          <p class="subtitle">The last changes you confirmed. Models, effort and flags only: prompt text is never stored.</p>
+        </div>
+      </div>
+      <ol class="feed" id="feed"></ol>
+    </section>
+
+    <footer class="foot" id="foot">–</footer>
+  </main>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

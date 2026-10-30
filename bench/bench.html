@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TokenMileage · Nemotron benchmark</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 13px; }
+    body { margin: 24px; }
+    h1 { margin: 0 0 4px; font-size: 20px; }
+    h2 { font-size: 15px; margin: 24px 0 8px; }
+    .hint { opacity: .7; margin: 4px 0 12px; }
+    fieldset { border: 1px solid #9995; border-radius: 6px; margin: 0 0 10px; padding: 6px 10px; }
+    legend { font-weight: 600; }
+    label { margin-right: 14px; white-space: nowrap; }
+    button { font: inherit; padding: 5px 12px; margin-right: 8px; cursor: pointer; }
+    #status { margin-left: 8px; font-weight: 600; }
+    table { border-collapse: collapse; margin: 6px 0 12px; }
+    th, td { border: 1px solid #9995; padding: 3px 7px; text-align: left; vertical-align: top; }
+    th { background: #8881; }
+    td.ok { background: #2e7d3226; } td.bad { background: #c6282826; }
+    td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    pre { white-space: pre-wrap; max-width: 520px; margin: 0; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <h1>Nemotron benchmark</h1>
+  <p class="hint">Runs from this extension page using the API key saved in TokenMileage options. Drafts are synthetic (bench/cases.js). Calls are logged as "bench" in the usage log.</p>
+
+  <fieldset><legend>Models</legend><div id="models"></div></fieldset>
+
+  <h2>1 · API probe</h2>
+  <p class="hint">Per model: streaming vs non-streaming, each reasoning switch, JSON-schema output. One tiny classification prompt.</p>
+  <button id="runProbe">Run API probe</button>
+
+  <h2>2 · Evaluate quality</h2>
+  <fieldset><legend>Reasoning</legend>
+    <label><input type="checkbox" name="reasoning" value="off" checked> off (extension default)</label>
+    <label><input type="checkbox" name="reasoning" value="on" checked> on</label>
+  </fieldset>
+  <fieldset><legend>Prompt variant</legend>
+    <label><input type="checkbox" name="variant" value="free" checked> free (Nemotron decides everything, SPEC design)</label>
+    <label><input type="checkbox" name="variant" value="codes"> codes (fallback)</label>
+  </fieldset>
+  <button id="runQuality">Run Evaluate quality</button>
+
+  <h2>3 · Model research (Nemotron + Tavily)</h2>
+  <p class="hint">Researches the claude.ai models below with each selected Nemotron model, as an agent with Tavily tools and/or as the fixed pipeline. Uses the saved Tavily key; nothing is stored in the extension's model facts. About 2–4 Tavily credits per row.</p>
+  <fieldset><legend>Method</legend>
+    <label><input type="checkbox" name="method" value="agent" checked> agent (Nemotron calls Tavily tools)</label>
+    <label><input type="checkbox" name="method" value="pipeline" checked> pipeline (fixed search → extract, Nemotron reads)</label>
+  </fieldset>
+  <fieldset><legend>claude.ai models (from the picker)</legend><div id="siteModels">–</div></fieldset>
+  <button id="runResearch">Run model research</button>
+
+  <p><button id="download" disabled>Download results JSON</button><span id="status"></span></p>
+
+  <div id="out"></div>
+
+  <script type="module" src="bench.js"></script>
+</body>
+</html>

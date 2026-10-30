@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TokenMileage</title>
+  <link rel="icon" href="../../icons/icon-32.png">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="../../icons/icon-48.png" alt="" width="28" height="28">
+        <span class="brand-name">TokenMileage</span>
+      </div>
+      <span class="tagline">Get more mileage from every AI token.</span>
+      <nav class="topnav">
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="#setup">Setup</a>
+        <a href="#modelsSection">Models</a>
+        <a href="#costs">Costs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <form id="form" class="grid">
+      <section class="card" id="setup">
+        <h2>Connections</h2>
+        <label>Nebius Token Factory API key
+          <input id="apiKey" type="password" autocomplete="off" spellcheck="false" placeholder="Paste your Nebius API key">
+        </label>
+        <p class="hint">Stored only in this browser (chrome.storage.local). Sent only to Token Factory.</p>
+        <label>Base URL
+          <input id="baseUrl" type="url" spellcheck="false">
+        </label>
+        <p class="hint">Leave blank to use the default.</p>
+        <label>Tavily API key <span class="optional">optional</span>
+          <input id="tavilyKey" type="password" autocomplete="off" spellcheck="false" placeholder="tvly-…">
+        </label>
+        <p class="hint">Model research: a Nemotron agent searches the vendor's official sites with Tavily for each model's best uses and price, with sources. Only model names are sent. Without a key, typical values per model family are used.</p>
+        <h3>Nemotron models in use</h3>
+        <ul id="models" class="pills"></ul>
+        <p class="hint">Each feature uses the Nemotron that scored best on our benchmark, with reasoning off.</p>
+      </section>
+
+      <section class="card">
+        <h2>Your AI plan</h2>
+        <label class="choice"><input type="radio" name="planType" value="flat"> <span><b>Flat plan</b> with session/weekly limits <i>e.g. Claude Pro/Max</i></span></label>
+        <label class="choice"><input type="radio" name="planType" value="usage"> <span><b>Usage-based</b> <i>pay per use</i></span></label>
+        <label class="choice"><input type="radio" name="planType" value="spend"> <span><b>Monthly spend limit</b> <i>e.g. Claude Enterprise "$X of $Y spent"</i></span></label>
+        <label class="choice sub" id="fixedFeeRow"><input type="checkbox" id="fixedFee"> <span>Unused budget is still charged (fixed fee)</span></label>
+        <p class="hint sub" id="fixedFeeHint">Ask IT if unsure. When on, TokenMileage nudges you to use leftover budget before it resets. When off, it only helps you spend less.</p>
+
+        <h2 class="spaced">Sites</h2>
+        <label class="choice"><input type="checkbox" id="site-claude"> <span>claude.ai</span></label>
+      </section>
+
+      <section class="card wide">
+        <h2>Usage alerts</h2>
+        <p class="hint">On claude.ai, TokenMileage compares how much of your allowance is used with how much of the period has gone, and suggests using it or slowing down.</p>
+        <div class="status-line"><span class="dot"></span><span>Now: <span id="usageAdvice">–</span></span></div>
+        <div class="fields">
+          <label class="inline">Near limit at <input id="nearLimitPct" type="number" min="50" max="100" step="1"> % used</label>
+          <label class="inline">Slow down when on pace to use over <input id="slowDownPace" type="number" min="80" max="300" step="5"> % by the reset</label>
+          <label class="inline">Use it when on pace to use under <input id="useItPace" type="number" min="10" max="100" step="5"> % <i>(flat plans and fixed-fee spend limits)</i></label>
+          <label class="inline">After closing the card with ×, hide the same advice for <input id="hideMinutes" type="number" min="0" max="1440" step="1"> minutes <i>(0 = every page load)</i></label>
+        </div>
+      </section>
+
+      <div class="actions wide">
+        <button type="submit" class="btn primary">Save</button>
+        <button type="button" id="test" class="btn secondary">Save &amp; test connections</button>
+        <span id="status" role="status"></span>
+      </div>
+    </form>
+
+    <section class="card" id="modelsSection">
+      <div class="card-head">
+        <div>
+          <h2>Models on claude.ai</h2>
+          <p class="subtitle" id="modelsNote">–</p>
+        </div>
+        <div class="head-actions">
+          <span id="researchStatus" class="hint"></span>
+          <button type="button" id="researchAll" class="btn secondary">Research all now</button>
+        </div>
+      </div>
+      <div class="table-wrap"><table id="modelTable" class="model-table"></table></div>
+    </section>
+
+    <section class="card" id="costs">
+      <h2>TokenMileage's own costs</h2>
+      <p id="usage" class="hint">–</p>
+      <p class="hint"><a href="../../bench/bench.html" target="_blank">Open the Nemotron benchmark</a></p>
+    </section>
+
+    <footer class="foot">TokenMileage · Nemotron on Nebius Token Factory · model research with Tavily · everything stays in this browser except the calls you see above.</footer>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

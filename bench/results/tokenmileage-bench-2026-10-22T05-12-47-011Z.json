@@ -1,0 +1,4419 @@
+{
+  "started": "2026-10-22T04:50:55.810Z",
+  "env": {
+    "baseUrl": "https://api.tokenfactory.us-central1.nebius.com/v1",
+    "stream": true,
+    "jsonMode": true,
+    "reasoningOff": {
+      "systemPrefix": "",
+      "extraBody": {
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      }
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  },
+  "probe": [
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "probe": "NON-stream · extension default",
+      "ok": true,
+      "error": null,
+      "ms": 2069,
+      "ttftMs": null,
+      "completionTokens": 7,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\":\"positive\"}"
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "probe": "stream · extension default (config reasoningOff)",
+      "ok": true,
+      "error": null,
+      "ms": 2107,
+      "ttftMs": 2107,
+      "completionTokens": 7,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\":\"positive\"}"
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "probe": "stream · no reasoning switch",
+      "ok": true,
+      "error": null,
+      "ms": 2478,
+      "ttftMs": 2316,
+      "completionTokens": 44,
+      "promptTokens": 54,
+      "reasoningChars": 171,
+      "validJson": true,
+      "content": "{\"sentiment\":\"positive\"}"
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "probe": "stream · enable_thinking:false only",
+      "ok": true,
+      "error": null,
+      "ms": 1714,
+      "ttftMs": 1714,
+      "completionTokens": 7,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\":\"positive\"}"
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "probe": "stream · /no_think only",
+      "ok": true,
+      "error": null,
+      "ms": 1879,
+      "ttftMs": 1820,
+      "completionTokens": 44,
+      "promptTokens": 58,
+      "reasoningChars": 171,
+      "validJson": true,
+      "content": "{\"sentiment\":\"positive\"}"
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "probe": "stream · enable_thinking:true",
+      "ok": true,
+      "error": null,
+      "ms": 2074,
+      "ttftMs": 1966,
+      "completionTokens": 44,
+      "promptTokens": 54,
+      "reasoningChars": 171,
+      "validJson": true,
+      "content": "{\"sentiment\":\"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "probe": "stream · extension default (config reasoningOff)",
+      "ok": true,
+      "error": null,
+      "ms": 597,
+      "ttftMs": 597,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "probe": "NON-stream · extension default",
+      "ok": true,
+      "error": null,
+      "ms": 554,
+      "ttftMs": null,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "probe": "stream · response_format json_schema (strict)",
+      "ok": true,
+      "error": null,
+      "ms": 1709,
+      "ttftMs": 1708,
+      "completionTokens": 7,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\":\"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "probe": "stream · enable_thinking:false only",
+      "ok": true,
+      "error": null,
+      "ms": 762,
+      "ttftMs": 762,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "probe": "stream · no reasoning switch",
+      "ok": true,
+      "error": null,
+      "ms": 1873,
+      "ttftMs": 1538,
+      "completionTokens": 150,
+      "promptTokens": 54,
+      "reasoningChars": 510,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "probe": "stream · /no_think only",
+      "ok": true,
+      "error": null,
+      "ms": 1677,
+      "ttftMs": 1107,
+      "completionTokens": 171,
+      "promptTokens": 58,
+      "reasoningChars": 597,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "probe": "stream · response_format json_schema (strict)",
+      "ok": true,
+      "error": null,
+      "ms": 714,
+      "ttftMs": 714,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "probe": "stream · enable_thinking:true",
+      "ok": true,
+      "error": null,
+      "ms": 1304,
+      "ttftMs": 1022,
+      "completionTokens": 145,
+      "promptTokens": 54,
+      "reasoningChars": 495,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "probe": "NON-stream · extension default",
+      "ok": true,
+      "error": null,
+      "ms": 415,
+      "ttftMs": null,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "probe": "stream · extension default (config reasoningOff)",
+      "ok": true,
+      "error": null,
+      "ms": 424,
+      "ttftMs": 424,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "probe": "stream · no reasoning switch",
+      "ok": true,
+      "error": null,
+      "ms": 872,
+      "ttftMs": 872,
+      "completionTokens": 47,
+      "promptTokens": 54,
+      "reasoningChars": 169,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "probe": "stream · enable_thinking:false only",
+      "ok": true,
+      "error": null,
+      "ms": 635,
+      "ttftMs": 635,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "probe": "stream · /no_think only",
+      "ok": true,
+      "error": null,
+      "ms": 1017,
+      "ttftMs": 1017,
+      "completionTokens": 47,
+      "promptTokens": 58,
+      "reasoningChars": 169,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "probe": "stream · response_format json_schema (strict)",
+      "ok": true,
+      "error": null,
+      "ms": 477,
+      "ttftMs": 476,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "probe": "stream · enable_thinking:true",
+      "ok": true,
+      "error": null,
+      "ms": 697,
+      "ttftMs": 696,
+      "completionTokens": 46,
+      "promptTokens": 54,
+      "reasoningChars": 168,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "probe": "stream · extension default (config reasoningOff)",
+      "ok": true,
+      "error": null,
+      "ms": 413,
+      "ttftMs": 413,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "probe": "NON-stream · extension default",
+      "ok": true,
+      "error": null,
+      "ms": 387,
+      "ttftMs": null,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "probe": "stream · no reasoning switch",
+      "ok": true,
+      "error": null,
+      "ms": 656,
+      "ttftMs": 655,
+      "completionTokens": 54,
+      "promptTokens": 54,
+      "reasoningChars": 219,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "probe": "stream · enable_thinking:false only",
+      "ok": true,
+      "error": null,
+      "ms": 408,
+      "ttftMs": 408,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "probe": "stream · /no_think only",
+      "ok": true,
+      "error": null,
+      "ms": 583,
+      "ttftMs": 583,
+      "completionTokens": 41,
+      "promptTokens": 58,
+      "reasoningChars": 167,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "probe": "stream · response_format json_schema (strict)",
+      "ok": true,
+      "error": null,
+      "ms": 418,
+      "ttftMs": 417,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "probe": "stream · enable_thinking:true",
+      "ok": true,
+      "error": null,
+      "ms": 480,
+      "ttftMs": 480,
+      "completionTokens": 41,
+      "promptTokens": 54,
+      "reasoningChars": 167,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "probe": "stream · alt base URL https://api.tokenfactory.nebius.com/v1",
+      "ok": true,
+      "error": null,
+      "ms": 748,
+      "ttftMs": 748,
+      "completionTokens": 8,
+      "promptTokens": 54,
+      "reasoningChars": 0,
+      "validJson": true,
+      "content": "{\"sentiment\": \"positive\"}"
+    }
+  ],
+  "quality": [
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "reformat-table",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 5224,
+      "ttftMs": 4211,
+      "completionTokens": 125,
+      "promptTokens": 1159,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "reformat",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "use smallest model for short reformatting",
+          "keep answer concise"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "dir-command",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 5253,
+      "ttftMs": 4220,
+      "completionTokens": 127,
+      "promptTokens": 1139,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "use smallest model for simple lookup",
+          "avoid extended thinking for short answer"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "user-guide-in-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": false,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 5402,
+      "ttftMs": 4299,
+      "completionTokens": 147,
+      "promptTokens": 1144,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "writing",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Start fresh chat to avoid wasted tokens on unrelated history",
+          "Use Sonnet 5.5 for balanced quality and cost",
+          "Keep answer concise to reduce token usage"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": false,
+        "consistent": false,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 5487,
+      "ttftMs": 2374,
+      "completionTokens": 125,
+      "promptTokens": 1167,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "use cheaper model",
+          "extend thinking",
+          "use fresh chat"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 5764,
+      "ttftMs": 1531,
+      "completionTokens": 143,
+      "promptTokens": 1166,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use Opus 5.5 for deep multi-step reasoning",
+          "Enable web search to fetch current stock data",
+          "Start fresh chat to avoid wasted context"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": false
+      },
+      "pass": false,
+      "ms": 5743,
+      "ttftMs": 1505,
+      "completionTokens": 143,
+      "promptTokens": 1166,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use web search to get up-to-date stock data",
+          "Limit analysis to 5-7 key AI stocks",
+          "Ask for concise bullet summary"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": false,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 2867,
+      "ttftMs": 1804,
+      "completionTokens": 128,
+      "promptTokens": 1145,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use a smaller model for short factual answers",
+          "Keep effort low for simple questions"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": false,
+        "consistent": false,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 2863,
+      "ttftMs": 1768,
+      "completionTokens": 136,
+      "promptTokens": 1140,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use Haiku 5.5 for cheap news answers",
+          "Ask for brief summary",
+          "Avoid long context"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": false,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 2958,
+      "ttftMs": 1762,
+      "completionTokens": 152,
+      "promptTokens": 1919,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "summarise",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use Haiku 5.5 for short summaries to save tokens",
+          "Keep answer under 5 bullets to limit output length",
+          "Avoid reusing large context; start fresh chat"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": false,
+        "consistent": false,
+        "saving": false,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 2930,
+      "ttftMs": 1732,
+      "completionTokens": 138,
+      "promptTokens": 1206,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Thread unrelated to title wastes allowance",
+          "Use Sonnet for multi-step reasoning",
+          "Narrow focus to one root cause"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "dir-command",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 13249,
+      "ttftMs": 1666,
+      "completionTokens": 911,
+      "promptTokens": 1139,
+      "reasoningChars": 2929,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use the smallest model for simple lookup to cut token cost",
+          "Avoid extended thinking; a short answer uses fewer tokens",
+          "No need for web search or extra tools"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "reformat-table",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 19620,
+      "ttftMs": 1565,
+      "completionTokens": 1375,
+      "promptTokens": 1159,
+      "reasoningChars": 4758,
+      "output": {
+        "complexity": "simple",
+        "task_type": "reformat",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Keep the request brief",
+          "Avoid extra explanation"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "user-guide-in-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 23746,
+      "ttftMs": 1653,
+      "completionTokens": 1655,
+      "promptTokens": 1144,
+      "reasoningChars": 6110,
+      "output": {
+        "complexity": "standard",
+        "task_type": "writing",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Switch to Sonnet 5.5 for writing to lower cost",
+          "Keep response concise to save tokens",
+          "Reuse existing context rather than start new"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "stocks-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 29129,
+      "ttftMs": 1905,
+      "completionTokens": 2060,
+      "promptTokens": 1166,
+      "reasoningChars": 7643,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Start a fresh chat to avoid irrelevant context cost",
+          "Ask for concise summary to cut token usage",
+          "Use web search tool for up‑to‑date data"
+        ],
+        "est_relative_usage_saving": "low"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": false
+      },
+      "pass": false,
+      "ms": 20569,
+      "ttftMs": 1660,
+      "completionTokens": 1516,
+      "promptTokens": 1167,
+      "reasoningChars": 5460,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Request bullet points to keep response short",
+          "Limit answer length with “keep it under 200 words”"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 28474,
+      "ttftMs": 1583,
+      "completionTokens": 2141,
+      "promptTokens": 1166,
+      "reasoningChars": 8199,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Unrelated history inflates token cost; start fresh",
+          "Narrow stock list to cut token usage",
+          "Avoid extended thinking unless essential"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 16154,
+      "ttftMs": 1784,
+      "completionTokens": 1270,
+      "promptTokens": 1145,
+      "reasoningChars": 4408,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use Haiku model for cheap answers",
+          "Start fresh chat to avoid wasted context"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": false,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": false,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 23655,
+      "ttftMs": 2099,
+      "completionTokens": 1879,
+      "promptTokens": 1140,
+      "reasoningChars": 7017,
+      "output": {
+        "complexity": "standard",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "use haiku instead of sonnet for cheaper tokens",
+          "ask for concise headline list",
+          "avoid extra reasoning steps"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 24641,
+      "ttftMs": 1550,
+      "completionTokens": 2057,
+      "promptTokens": 1919,
+      "reasoningChars": 7733,
+      "output": {
+        "complexity": "standard",
+        "task_type": "summarise",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Specify exactly five bullet points to cap output tokens.",
+          "Send only the distinct sections, removing duplicate text.",
+          "Keep the request concise; avoid extra context."
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "dir-command",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 3482,
+      "ttftMs": 2553,
+      "completionTokens": 112,
+      "promptTokens": 1139,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "use haiku for quick lookups to save allowance",
+          "keep thread fresh by starting new chat for unrelated questions"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "user-guide-in-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": false,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 2001,
+      "ttftMs": 1007,
+      "completionTokens": 121,
+      "promptTokens": 1144,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Start a new chat to avoid re-reading 9 prior turns",
+          "Use Haiku 5.5 for short factual requests to minimise token cost"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "reformat-table",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 4952,
+      "ttftMs": 4049,
+      "completionTokens": 112,
+      "promptTokens": 1159,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "reformat",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "use a small model for simple reformat tasks",
+          "keep chat threads short to avoid re-reading history"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": false,
+        "consistent": false,
+        "saving": false,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 3752,
+      "ttftMs": 2773,
+      "completionTokens": 121,
+      "promptTokens": 1166,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use web search for current stock prices and fair value estimates",
+          "Limit analysis to 5-10 top AI-related stocks to reduce token usage"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 25807,
+      "ttftMs": 2129,
+      "completionTokens": 1845,
+      "promptTokens": 1206,
+      "reasoningChars": 6865,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Ask for concise answer",
+          "Avoid extra context"
+        ],
+        "est_relative_usage_saving": "low"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 11614,
+      "ttftMs": 10716,
+      "completionTokens": 112,
+      "promptTokens": 1167,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use high effort only when needed for deep reasoning",
+          "Start a fresh chat to avoid re-reading long history"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": false,
+        "consistent": false,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 17834,
+      "ttftMs": 16791,
+      "completionTokens": 126,
+      "promptTokens": 1166,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use sonnet 5.5 for multi-step reasoning to save 60% vs opus",
+          "Enable web search for current stock data instead of relying on training cutoff"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": false,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 12833,
+      "ttftMs": 11866,
+      "completionTokens": 117,
+      "promptTokens": 1145,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use a small model for one-off factual questions",
+          "Start a new chat to avoid re-reading 32 turns of pipeline history"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 2557,
+      "ttftMs": 1435,
+      "completionTokens": 126,
+      "promptTokens": 1919,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "summarise",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use 5 bullet points to keep answer short and reduce output tokens",
+          "If you need more detail, ask follow-up instead of re-summarising the whole report"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": false,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": false,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 2957,
+      "ttftMs": 1903,
+      "completionTokens": 121,
+      "promptTokens": 1206,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use a single shared DB transaction to prevent double-charge race conditions",
+          "Add idempotency key to gateway.charge so retries are safe"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": false,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 8557,
+      "ttftMs": 7675,
+      "completionTokens": 112,
+      "promptTokens": 1140,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "web search costs extra tokens; use a summary site instead",
+          "fresh chat avoids re-reading old turns"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "reformat-table",
+      "ok": true,
+      "error": "no JSON object found",
+      "checks": {
+        "json": false
+      },
+      "pass": false,
+      "ms": 92552,
+      "ttftMs": 29882,
+      "completionTokens": 4000,
+      "promptTokens": 1159,
+      "reasoningChars": 15747,
+      "output": null,
+      "raw": ""
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "dir-command",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 98484,
+      "ttftMs": 39051,
+      "completionTokens": 3720,
+      "promptTokens": 1139,
+      "reasoningChars": 13417,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Choose Haiku for simple lookups cuts cost 5x",
+          "Low effort setting saves tokens on short queries"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "user-guide-in-thread",
+      "ok": false,
+      "error": "Token Factory timed out",
+      "checks": {
+        "json": false
+      },
+      "pass": false,
+      "ms": null,
+      "ttftMs": null,
+      "completionTokens": null,
+      "promptTokens": null,
+      "reasoningChars": null,
+      "output": null,
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "stocks-on-haiku",
+      "ok": true,
+      "error": "no JSON object found",
+      "checks": {
+        "json": false
+      },
+      "pass": false,
+      "ms": 55437,
+      "ttftMs": 2063,
+      "completionTokens": 4000,
+      "promptTokens": 1166,
+      "reasoningChars": 15829,
+      "output": null,
+      "raw": ""
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": "no JSON object found",
+      "checks": {
+        "json": false
+      },
+      "pass": false,
+      "ms": 82291,
+      "ttftMs": 21804,
+      "completionTokens": 4000,
+      "promptTokens": 1166,
+      "reasoningChars": 16061,
+      "output": null,
+      "raw": ""
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": "no JSON object found",
+      "checks": {
+        "json": false
+      },
+      "pass": false,
+      "ms": 75883,
+      "ttftMs": 16819,
+      "completionTokens": 4000,
+      "promptTokens": 1167,
+      "reasoningChars": 16662,
+      "output": null,
+      "raw": ""
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 50160,
+      "ttftMs": 4912,
+      "completionTokens": 3171,
+      "promptTokens": 1145,
+      "reasoningChars": 11269,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Unrelated history adds tokens per turn",
+          "Use smallest model for simple facts",
+          "Short answers reduce token use"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": "no JSON object found",
+      "checks": {
+        "json": false
+      },
+      "pass": false,
+      "ms": 71192,
+      "ttftMs": 11089,
+      "completionTokens": 4000,
+      "promptTokens": 1140,
+      "reasoningChars": 16273,
+      "output": null,
+      "raw": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "dir-command",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 785,
+      "ttftMs": 784,
+      "completionTokens": 89,
+      "promptTokens": 1139,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "reformat-table",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 820,
+      "ttftMs": 819,
+      "completionTokens": 90,
+      "promptTokens": 1159,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "reformat",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "user-guide-in-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 783,
+      "ttftMs": 783,
+      "completionTokens": 90,
+      "promptTokens": 1144,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "writing",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": false,
+        "tools": true,
+        "fresh": false,
+        "consistent": false,
+        "saving": false,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 1057,
+      "ttftMs": 1057,
+      "completionTokens": 100,
+      "promptTokens": 1166,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use 'list' format to reduce output length"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": "no JSON object found",
+      "checks": {
+        "json": false
+      },
+      "pass": false,
+      "ms": 55336,
+      "ttftMs": 1816,
+      "completionTokens": 4000,
+      "promptTokens": 1206,
+      "reasoningChars": 16586,
+      "output": null,
+      "raw": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": false,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 1124,
+      "ttftMs": 1124,
+      "completionTokens": 90,
+      "promptTokens": 1167,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": false,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 1223,
+      "ttftMs": 1223,
+      "completionTokens": 98,
+      "promptTokens": 1166,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use deep research tool for comprehensive fundamental analysis"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 1085,
+      "ttftMs": 1042,
+      "completionTokens": 106,
+      "promptTokens": 1145,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Start fresh chat because thread exceeds 30k tokens and query is unrelated."
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 1312,
+      "ttftMs": 1311,
+      "completionTokens": 100,
+      "promptTokens": 1140,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use web search tool for latest headlines."
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 953,
+      "ttftMs": 952,
+      "completionTokens": 92,
+      "promptTokens": 1919,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "summarise",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": false,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 1172,
+      "ttftMs": 999,
+      "completionTokens": 90,
+      "promptTokens": 1206,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": "no JSON object found",
+      "checks": {
+        "json": false
+      },
+      "pass": false,
+      "ms": 60882,
+      "ttftMs": 1778,
+      "completionTokens": 4000,
+      "promptTokens": 1919,
+      "reasoningChars": 16445,
+      "output": null,
+      "raw": ""
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "reformat-table",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 3156,
+      "ttftMs": 1003,
+      "completionTokens": 498,
+      "promptTokens": 1159,
+      "reasoningChars": 1546,
+      "output": {
+        "complexity": "simple",
+        "task_type": "reformat",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "dir-command",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 6296,
+      "ttftMs": 1025,
+      "completionTokens": 1120,
+      "promptTokens": 1139,
+      "reasoningChars": 3978,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use Haiku model for simple lookups to minimize cost.",
+          "Keep the conversation brief; no extra context needed for this query."
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "user-guide-in-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 8391,
+      "ttftMs": 1005,
+      "completionTokens": 1543,
+      "promptTokens": 1144,
+      "reasoningChars": 6147,
+      "output": {
+        "complexity": "standard",
+        "task_type": "writing",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Ask for a concise user guide to limit output length.",
+          "No live data needed, so keep web search/tools off to save usage."
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "stocks-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 6786,
+      "ttftMs": 1172,
+      "completionTokens": 1269,
+      "promptTokens": 1166,
+      "reasoningChars": 4898,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "artifact",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Start a fresh chat to avoid re‑reading the unrelated productivity‑tools history.",
+          "Limit the analysis to a few key AI stocks to lower token usage."
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 5610,
+      "ttftMs": 1053,
+      "completionTokens": 905,
+      "promptTokens": 1145,
+      "reasoningChars": 3136,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Start a fresh chat to avoid reprocessing the long Python pipeline thread.",
+          "Use Haiku model for simple factual questions to lower token cost."
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 9859,
+      "ttftMs": 859,
+      "completionTokens": 1825,
+      "promptTokens": 1166,
+      "reasoningChars": 7161,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Start a fresh chat to avoid loading the unrelated productivity-tools conversation.",
+          "Ask for analysis on only 3‑5 key AI stocks to reduce tool use and reasoning steps."
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 12056,
+      "ttftMs": 1349,
+      "completionTokens": 2031,
+      "promptTokens": 1167,
+      "reasoningChars": 8290,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Ask for a concise outline to limit output tokens while keeping essential details.",
+          "Avoid enabling web search or file tools; they add tokens without benefit for this design task."
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 7976,
+      "ttftMs": 870,
+      "completionTokens": 1230,
+      "promptTokens": 1919,
+      "reasoningChars": 4513,
+      "output": {
+        "complexity": "standard",
+        "task_type": "summarise",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Ask for a concise 5‑bullet summary to minimise output tokens.",
+          "Use Sonnet 5.5 instead of Opus to cut cost ~40% while keeping quality."
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "dir-command",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 765,
+      "ttftMs": 765,
+      "completionTokens": 120,
+      "promptTokens": 1139,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Small model answers one-liners cheaply"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": false
+      },
+      "pass": false,
+      "ms": 8873,
+      "ttftMs": 1014,
+      "completionTokens": 1445,
+      "promptTokens": 1140,
+      "reasoningChars": 5682,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Haiku suffices for short factual answers, reducing cost.",
+          "Ask for a brief bullet‑point list to keep the answer short."
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "reformat-table",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 761,
+      "ttftMs": 761,
+      "completionTokens": 127,
+      "promptTokens": 1159,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "reformat",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Haiku 5.5 is 3× cheaper for simple reformatting"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "user-guide-in-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": false,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": false,
+      "ms": 812,
+      "ttftMs": 812,
+      "completionTokens": 143,
+      "promptTokens": 1144,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "writing",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids re-reading 20k unrelated tokens",
+          "Sonnet 5.5 saves 40% vs Opus for writing tasks"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 771,
+      "ttftMs": 771,
+      "completionTokens": 134,
+      "promptTokens": 1166,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "artifact",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids re-reading 20k unrelated tokens",
+          "Web search needed for live stock data"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 770,
+      "ttftMs": 769,
+      "completionTokens": 134,
+      "promptTokens": 1166,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids re-reading 20k unrelated tokens",
+          "Web search needed for live stock data"
+        ],
+        "est_relative_usage_saving": "low"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 769,
+      "ttftMs": 769,
+      "completionTokens": 127,
+      "promptTokens": 1167,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Complex system design needs large model",
+          "High effort for thorough trade-off analysis"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 778,
+      "ttftMs": 777,
+      "completionTokens": 133,
+      "promptTokens": 1145,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids re-reading 48k tokens",
+          "Small model answers factual lookups cheaply"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 728,
+      "ttftMs": 728,
+      "completionTokens": 119,
+      "promptTokens": 1140,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Web search needed for live headlines"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 837,
+      "ttftMs": 837,
+      "completionTokens": 142,
+      "promptTokens": 1919,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "summarise",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Sonnet 5.5 handles this summarisation at lower cost than Opus",
+          "Single-shot summary avoids multi-turn token buildup"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 6739,
+      "ttftMs": 1005,
+      "completionTokens": 1224,
+      "promptTokens": 1206,
+      "reasoningChars": 4591,
+      "output": {
+        "complexity": "standard",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Sonnet 5.5 provides sufficient analysis for this bug at lower cost than Opus.",
+          "Request a brief answer to keep output tokens low and save usage."
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 1015,
+      "ttftMs": 1008,
+      "completionTokens": 132,
+      "promptTokens": 1206,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "code",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Race condition needs deep reasoning; Opus high effort best",
+          "Thread short and on-topic; keep context"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "reformat-table",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 1698,
+      "ttftMs": 1041,
+      "completionTokens": 488,
+      "promptTokens": 1159,
+      "reasoningChars": 1415,
+      "output": {
+        "complexity": "simple",
+        "task_type": "reformat",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use Haiku for simple reformatting tasks",
+          "Low effort suffices for basic table conversion"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "dir-command",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 1970,
+      "ttftMs": 1013,
+      "completionTokens": 481,
+      "promptTokens": 1139,
+      "reasoningChars": 1335,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Small model handles one-line lookups at 1/5 the cost",
+          "Spend plan charges per token — cheaper model saves directly"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "user-guide-in-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 2281,
+      "ttftMs": 1042,
+      "completionTokens": 534,
+      "promptTokens": 1144,
+      "reasoningChars": 1806,
+      "output": {
+        "complexity": "standard",
+        "task_type": "writing",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Smaller model handles documentation well",
+          "Artifact output keeps guide separate"
+        ],
+        "est_relative_usage_saving": "medium"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 1873,
+      "ttftMs": 1037,
+      "completionTokens": 478,
+      "promptTokens": 1166,
+      "reasoningChars": 1383,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids re-reading 20k unrelated tokens",
+          "Narrow to a few key AI stocks to cut research scope",
+          "Batch all stock requests in one prompt to reduce tool calls"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 2303,
+      "ttftMs": 1044,
+      "completionTokens": 564,
+      "promptTokens": 1167,
+      "reasoningChars": 1973,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 1530,
+      "ttftMs": 1017,
+      "completionTokens": 392,
+      "promptTokens": 1145,
+      "reasoningChars": 1096,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids re-reading 48k unrelated tokens"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "stocks-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 3517,
+      "ttftMs": 1021,
+      "completionTokens": 931,
+      "promptTokens": 1166,
+      "reasoningChars": 3504,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Fresh chat avoids unrelated 20k-token history",
+          "Web search needed for live stock prices",
+          "Group stocks to limit answer length"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 1662,
+      "ttftMs": 997,
+      "completionTokens": 503,
+      "promptTokens": 1919,
+      "reasoningChars": 1535,
+      "output": {
+        "complexity": "simple",
+        "task_type": "summarise",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Small model handles summarisation cheaply",
+          "Request brief bullets to cut tokens"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 1933,
+      "ttftMs": 1003,
+      "completionTokens": 430,
+      "promptTokens": 1140,
+      "reasoningChars": 1217,
+      "output": {
+        "complexity": "simple",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Use web search tool for live headlines",
+          "Small model suffices for quick lookups"
+        ],
+        "est_relative_usage_saving": "high"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true
+      },
+      "pass": true,
+      "ms": 5154,
+      "ttftMs": 1229,
+      "completionTokens": 1750,
+      "promptTokens": 1206,
+      "reasoningChars": 6671,
+      "output": {
+        "complexity": "complex",
+        "task_type": "code",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Larger model + high effort solves complex debugging in one turn",
+          "Avoids multiple follow-up turns on hard concurrency bugs"
+        ],
+        "est_relative_usage_saving": "none"
+      },
+      "raw": null
+    }
+  ],
+  "summary": [
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "off",
+      "variant": "free",
+      "cases": 10,
+      "allPass": 3,
+      "errors": 0,
+      "byCheck": {
+        "json": {
+          "pass": 10,
+          "of": 10
+        },
+        "complexity": {
+          "pass": 10,
+          "of": 10
+        },
+        "tools": {
+          "pass": 10,
+          "of": 10
+        },
+        "fresh": {
+          "pass": 5,
+          "of": 10
+        },
+        "consistent": {
+          "pass": 6,
+          "of": 10
+        },
+        "saving": {
+          "pass": 9,
+          "of": 10
+        },
+        "tipsMax3": {
+          "pass": 10,
+          "of": 10
+        },
+        "noAnswerLeak": {
+          "pass": 10,
+          "of": 10
+        },
+        "noContradiction": {
+          "pass": 10,
+          "of": 10
+        },
+        "noFormatTip": {
+          "pass": 9,
+          "of": 10
+        },
+        "codesOnly": {
+          "pass": 0,
+          "of": 0
+        }
+      },
+      "avgMs": 4449,
+      "avgTtftMs": 2521,
+      "avgCompletionTokens": 136,
+      "avgReasoningChars": 0
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "reasoning": "on",
+      "variant": "free",
+      "cases": 10,
+      "allPass": 8,
+      "errors": 0,
+      "byCheck": {
+        "json": {
+          "pass": 10,
+          "of": 10
+        },
+        "complexity": {
+          "pass": 10,
+          "of": 10
+        },
+        "tools": {
+          "pass": 10,
+          "of": 10
+        },
+        "fresh": {
+          "pass": 10,
+          "of": 10
+        },
+        "consistent": {
+          "pass": 9,
+          "of": 10
+        },
+        "saving": {
+          "pass": 10,
+          "of": 10
+        },
+        "tipsMax3": {
+          "pass": 10,
+          "of": 10
+        },
+        "noAnswerLeak": {
+          "pass": 10,
+          "of": 10
+        },
+        "noContradiction": {
+          "pass": 9,
+          "of": 10
+        },
+        "noFormatTip": {
+          "pass": 9,
+          "of": 10
+        },
+        "codesOnly": {
+          "pass": 0,
+          "of": 0
+        }
+      },
+      "avgMs": 22504,
+      "avgTtftMs": 1759,
+      "avgCompletionTokens": 1671,
+      "avgReasoningChars": 6112
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "off",
+      "variant": "free",
+      "cases": 10,
+      "allPass": 4,
+      "errors": 0,
+      "byCheck": {
+        "json": {
+          "pass": 10,
+          "of": 10
+        },
+        "complexity": {
+          "pass": 9,
+          "of": 10
+        },
+        "tools": {
+          "pass": 10,
+          "of": 10
+        },
+        "fresh": {
+          "pass": 7,
+          "of": 10
+        },
+        "consistent": {
+          "pass": 6,
+          "of": 10
+        },
+        "saving": {
+          "pass": 9,
+          "of": 10
+        },
+        "tipsMax3": {
+          "pass": 10,
+          "of": 10
+        },
+        "noAnswerLeak": {
+          "pass": 9,
+          "of": 10
+        },
+        "noContradiction": {
+          "pass": 10,
+          "of": 10
+        },
+        "noFormatTip": {
+          "pass": 10,
+          "of": 10
+        },
+        "codesOnly": {
+          "pass": 0,
+          "of": 0
+        }
+      },
+      "avgMs": 7054,
+      "avgTtftMs": 6077,
+      "avgCompletionTokens": 118,
+      "avgReasoningChars": 0
+    },
+    {
+      "model": "nvidia/Nemotron-3_5-Lightning",
+      "reasoning": "on",
+      "variant": "free",
+      "cases": 10,
+      "allPass": 2,
+      "errors": 1,
+      "byCheck": {
+        "json": {
+          "pass": 2,
+          "of": 10
+        },
+        "complexity": {
+          "pass": 2,
+          "of": 2
+        },
+        "tools": {
+          "pass": 2,
+          "of": 2
+        },
+        "fresh": {
+          "pass": 2,
+          "of": 2
+        },
+        "consistent": {
+          "pass": 2,
+          "of": 2
+        },
+        "saving": {
+          "pass": 2,
+          "of": 2
+        },
+        "tipsMax3": {
+          "pass": 2,
+          "of": 2
+        },
+        "noAnswerLeak": {
+          "pass": 2,
+          "of": 2
+        },
+        "noContradiction": {
+          "pass": 2,
+          "of": 2
+        },
+        "noFormatTip": {
+          "pass": 2,
+          "of": 2
+        },
+        "codesOnly": {
+          "pass": 0,
+          "of": 0
+        }
+      },
+      "avgMs": 71357,
+      "avgTtftMs": 14357,
+      "avgCompletionTokens": 3877,
+      "avgReasoningChars": 15365
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "off",
+      "variant": "free",
+      "cases": 10,
+      "allPass": 6,
+      "errors": 0,
+      "byCheck": {
+        "json": {
+          "pass": 10,
+          "of": 10
+        },
+        "complexity": {
+          "pass": 8,
+          "of": 10
+        },
+        "tools": {
+          "pass": 10,
+          "of": 10
+        },
+        "fresh": {
+          "pass": 8,
+          "of": 10
+        },
+        "consistent": {
+          "pass": 9,
+          "of": 10
+        },
+        "saving": {
+          "pass": 8,
+          "of": 10
+        },
+        "tipsMax3": {
+          "pass": 10,
+          "of": 10
+        },
+        "noAnswerLeak": {
+          "pass": 10,
+          "of": 10
+        },
+        "noContradiction": {
+          "pass": 10,
+          "of": 10
+        },
+        "noFormatTip": {
+          "pass": 10,
+          "of": 10
+        },
+        "codesOnly": {
+          "pass": 0,
+          "of": 0
+        }
+      },
+      "avgMs": 1031,
+      "avgTtftMs": 1009,
+      "avgCompletionTokens": 95,
+      "avgReasoningChars": 0
+    },
+    {
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "reasoning": "on",
+      "variant": "free",
+      "cases": 10,
+      "allPass": 9,
+      "errors": 0,
+      "byCheck": {
+        "json": {
+          "pass": 10,
+          "of": 10
+        },
+        "complexity": {
+          "pass": 10,
+          "of": 10
+        },
+        "tools": {
+          "pass": 10,
+          "of": 10
+        },
+        "fresh": {
+          "pass": 10,
+          "of": 10
+        },
+        "consistent": {
+          "pass": 10,
+          "of": 10
+        },
+        "saving": {
+          "pass": 10,
+          "of": 10
+        },
+        "tipsMax3": {
+          "pass": 10,
+          "of": 10
+        },
+        "noAnswerLeak": {
+          "pass": 10,
+          "of": 10
+        },
+        "noContradiction": {
+          "pass": 10,
+          "of": 10
+        },
+        "noFormatTip": {
+          "pass": 9,
+          "of": 10
+        },
+        "codesOnly": {
+          "pass": 0,
+          "of": 0
+        }
+      },
+      "avgMs": 7574,
+      "avgTtftMs": 1036,
+      "avgCompletionTokens": 1309,
+      "avgReasoningChars": 4994
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "cases": 10,
+      "allPass": 9,
+      "errors": 0,
+      "byCheck": {
+        "json": {
+          "pass": 10,
+          "of": 10
+        },
+        "complexity": {
+          "pass": 10,
+          "of": 10
+        },
+        "tools": {
+          "pass": 10,
+          "of": 10
+        },
+        "fresh": {
+          "pass": 9,
+          "of": 10
+        },
+        "consistent": {
+          "pass": 10,
+          "of": 10
+        },
+        "saving": {
+          "pass": 10,
+          "of": 10
+        },
+        "tipsMax3": {
+          "pass": 10,
+          "of": 10
+        },
+        "noAnswerLeak": {
+          "pass": 10,
+          "of": 10
+        },
+        "noContradiction": {
+          "pass": 10,
+          "of": 10
+        },
+        "noFormatTip": {
+          "pass": 10,
+          "of": 10
+        },
+        "codesOnly": {
+          "pass": 0,
+          "of": 0
+        }
+      },
+      "avgMs": 801,
+      "avgTtftMs": 800,
+      "avgCompletionTokens": 131,
+      "avgReasoningChars": 0
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "on",
+      "variant": "free",
+      "cases": 10,
+      "allPass": 10,
+      "errors": 0,
+      "byCheck": {
+        "json": {
+          "pass": 10,
+          "of": 10
+        },
+        "complexity": {
+          "pass": 10,
+          "of": 10
+        },
+        "tools": {
+          "pass": 10,
+          "of": 10
+        },
+        "fresh": {
+          "pass": 10,
+          "of": 10
+        },
+        "consistent": {
+          "pass": 10,
+          "of": 10
+        },
+        "saving": {
+          "pass": 10,
+          "of": 10
+        },
+        "tipsMax3": {
+          "pass": 10,
+          "of": 10
+        },
+        "noAnswerLeak": {
+          "pass": 10,
+          "of": 10
+        },
+        "noContradiction": {
+          "pass": 10,
+          "of": 10
+        },
+        "noFormatTip": {
+          "pass": 10,
+          "of": 10
+        },
+        "codesOnly": {
+          "pass": 0,
+          "of": 0
+        }
+      },
+      "avgMs": 2392,
+      "avgTtftMs": 1044,
+      "avgCompletionTokens": 655,
+      "avgReasoningChars": 2194
+    }
+  ],
+  "cases": [
+    {
+      "id": "dir-command",
+      "note": "seen live 2026-10-21: tips answered the question (use dir, add /b)",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "answerLeak": "\\bdir\\b|\\/b\\b|\\bls\\b|get-childitem|gci\\b"
+      }
+    },
+    {
+      "id": "reformat-table",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "allowFormat": true,
+        "answerLeak": "\\|\\s*red|\\bcolou?r\\s*\\|"
+      }
+    },
+    {
+      "id": "user-guide-in-thread",
+      "note": "seen live 2026-10-22: refers back to the conversation",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "standard"
+        ],
+        "tools": false,
+        "fresh": false
+      }
+    },
+    {
+      "id": "stocks-on-haiku",
+      "note": "seen live 2026-10-22: complex/research but recommended Haiku, saving medium",
+      "modelLabel": "Haiku 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": true,
+        "fresh": true,
+        "answerLeak": "nvidia|nvda|msft|microsoft|p\\/e|discounted cash"
+      }
+    },
+    {
+      "id": "stocks-on-opus",
+      "note": "seen live 2026-10-22: tip told user to switch to Sonnet while card said Opus",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": true,
+        "fresh": true,
+        "answerLeak": "nvidia|nvda|msft|microsoft|p\\/e|discounted cash"
+      }
+    },
+    {
+      "id": "schema-design",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": false,
+        "fresh": false,
+        "answerLeak": "tenant_id|foreign key|uuid"
+      }
+    },
+    {
+      "id": "capital-in-long-thread",
+      "modelLabel": "Opus 5.5 High",
+      "thread": {
+        "turns": 32,
+        "approx_tokens": 48000,
+        "title": "Python data pipeline refactor"
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": true,
+        "answerLeak": "canberra|sydney"
+      }
+    },
+    {
+      "id": "news-today",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple",
+          "standard"
+        ],
+        "tools": true,
+        "fresh": false
+      }
+    },
+    {
+      "id": "summarise-pasted",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple",
+          "standard"
+        ],
+        "tools": false,
+        "fresh": false,
+        "allowFormat": true,
+        "answerLeak": "margins? (will )?stabili[sz]e|logistics"
+      }
+    },
+    {
+      "id": "debug-race",
+      "modelLabel": "Haiku 5.5 Low",
+      "thread": {
+        "turns": 4,
+        "approx_tokens": 6000,
+        "title": "Order service bug"
+      },
+      "expect": {
+        "complexity": [
+          "standard",
+          "complex"
+        ],
+        "tools": false,
+        "fresh": false,
+        "answerLeak": "idempoten|lock|synchroni[sz]ed|transaction"
+      }
+    }
+  ]
+}

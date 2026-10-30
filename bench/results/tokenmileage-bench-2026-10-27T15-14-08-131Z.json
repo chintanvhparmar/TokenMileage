@@ -1,0 +1,1341 @@
+{
+  "started": "2026-10-27T15:13:54.842Z",
+  "env": {
+    "baseUrl": "https://api.tokenfactory.us-central1.nebius.com/v1",
+    "stream": true,
+    "jsonMode": true,
+    "reasoningOff": {
+      "systemPrefix": "",
+      "extraBody": {
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      }
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  },
+  "probe": [],
+  "quality": [
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revised": true,
+        "revisedNoAnswer": true,
+        "revisedNoAdd": true
+      },
+      "pass": true,
+      "ms": 1817,
+      "ttftMs": 991,
+      "completionTokens": 222,
+      "promptTokens": 1788,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids 20k token re-read",
+          "Enable web search for live prices",
+          "Batch all AI stocks in one prompt"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "Using web search, provide a fundamental analysis of all publicly traded AI-related stocks. For each, list: current market value, your fair-value estimate, expected value in 5 years, and the key reasons. Cover the full universe of AI-exposed equities; do not pre-filter or limit the list. State the date and time zone of the data you retrieve."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "powerbi-plan",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revised": true,
+        "revisedNoAnswer": true
+      },
+      "pass": true,
+      "ms": 1560,
+      "ttftMs": 1108,
+      "completionTokens": 223,
+      "promptTokens": 1768,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "writing",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Sonnet 5.5 balances depth and cost for planning tasks",
+          "Ask for a concise, phased migration plan to limit tokens",
+          "Save the plan as an artifact for reuse"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "Create a concise, phased migration plan to move our team's monthly reports from Excel to Power BI. Include key steps: data preparation, model design, report recreation, validation, and rollout. Note any assumptions about data sources, refresh needs, and user training. Deliver as a structured outline suitable for a project artifact."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "time-now",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revisedNoAnswer": true,
+        "revisedNoAdd": true
+      },
+      "pass": true,
+      "ms": 963,
+      "ttftMs": 963,
+      "completionTokens": 147,
+      "promptTokens": 1765,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Current model is cheapest",
+          "Web search needed for live time"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "What is the current time? Please state the time zone you used."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "list-files-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revised": true,
+        "revisedNoAnswer": true,
+        "revisedNoGuess": true
+      },
+      "pass": true,
+      "ms": 988,
+      "ttftMs": 988,
+      "completionTokens": 152,
+      "promptTokens": 1756,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Ask for one-liner only",
+          "Specify OS if needed"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "Give me the single command to list files in the current directory. State which OS you assume."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "dir-command",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revisedNoAnswer": true
+      },
+      "pass": true,
+      "ms": 1011,
+      "ttftMs": 1010,
+      "completionTokens": 147,
+      "promptTokens": 1762,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Small model handles one-line lookups",
+          "Low effort avoids extended thinking"
+        ],
+        "est_relative_usage_saving": "high",
+        "revised_prompt": "What is the Windows command to list files in the current directory?"
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revisedNoAnswer": true,
+        "revisedNoAdd": true
+      },
+      "pass": true,
+      "ms": 1862,
+      "ttftMs": 1299,
+      "completionTokens": 263,
+      "promptTokens": 1790,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Opus handles multi-step schema reasoning best",
+          "Ask for artifact to keep schema reusable",
+          "Batch follow-up questions in same chat"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "Design a database schema for a multi-tenant SaaS billing system covering usage-based pricing, invoices, credits, and proration. Provide the schema as a standalone artifact (SQL DDL or equivalent) with clear table definitions, relationships, and indexes. For each major table, explain the key design trade-offs (e.g., normalization vs. query performance, flexibility vs. complexity, auditability vs. storage). Cover edge cases like mid-cycle plan changes, credit expiry, and usage aggregation granularity. Do not assume a specific SQL dialect; note any dialect-specific choices."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "reformat-table",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1589,
+      "ttftMs": 1589,
+      "completionTokens": 162,
+      "promptTokens": 1782,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "reformat",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Small model handles simple reformatting at 1/3 the cost"
+        ],
+        "est_relative_usage_saving": "high",
+        "revised_prompt": ""
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1525,
+      "ttftMs": 1524,
+      "completionTokens": 147,
+      "promptTokens": 2542,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "summarise",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Haiku 5.5 is 5× cheaper than Opus for this simple summary",
+          "Low effort avoids extended thinking tokens"
+        ],
+        "est_relative_usage_saving": "high",
+        "revised_prompt": ""
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": false,
+        "tipsMatchThread": true,
+        "revisedNoAnswer": true
+      },
+      "pass": false,
+      "ms": 1731,
+      "ttftMs": 1730,
+      "completionTokens": 167,
+      "promptTokens": 1763,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Web search needed for live headlines",
+          "Ask for brief bullet list to save tokens"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "What are today's top headlines about AI regulation? Please provide a brief bullet-point summary of the 5-7 most significant stories with sources."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revisedNoAnswer": true
+      },
+      "pass": true,
+      "ms": 1798,
+      "ttftMs": 992,
+      "completionTokens": 177,
+      "promptTokens": 1767,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids re-reading 48k tokens of unrelated history",
+          "Small model answers simple facts at 1/5 the usage cost",
+          "Low effort is enough for a one-line lookup"
+        ],
+        "est_relative_usage_saving": "high",
+        "revised_prompt": "What is the capital of Australia? Please give a one-sentence answer."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-haiku",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revised": true,
+        "revisedNoAnswer": true,
+        "revisedNoAdd": true
+      },
+      "pass": true,
+      "ms": 1763,
+      "ttftMs": 1674,
+      "completionTokens": 204,
+      "promptTokens": 1788,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids re-reading 20k unrelated tokens",
+          "Web search needed for live stock data",
+          "Batch all AI stocks in one prompt"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "Research and analyze all publicly traded stocks in the AI domain. For each, provide: current market value, fundamental fair value estimate, expected value in 5 years, and reasoning. Use web search for current prices and financials. Present as a structured list."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "user-guide-in-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revisedNoAnswer": true
+      },
+      "pass": true,
+      "ms": 1846,
+      "ttftMs": 1696,
+      "completionTokens": 224,
+      "promptTokens": 1766,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "writing",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Sonnet 5.5 costs 3/5 of Opus for standard writing",
+          "Ask for concise guide to reduce token usage"
+        ],
+        "est_relative_usage_saving": "medium",
+        "revised_prompt": "Create a clear, concise user guide for the browser extension discussed in this conversation. Structure it with: 1) Quick start (install & first use), 2) Core features with brief steps, 3) Common workflows, 4) Troubleshooting FAQ. Use simple language, bullet points, and keep each section short. Output as a standalone document I can share."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "stocks-on-opus",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revised": true,
+        "revisedNoAnswer": true,
+        "revisedNoAdd": true
+      },
+      "pass": true,
+      "ms": 1513,
+      "ttftMs": 1005,
+      "completionTokens": 216,
+      "promptTokens": 1788,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids 20k-token history re-read",
+          "Web search needed for live stock data",
+          "Batch all AI stocks in one prompt"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "Research and analyze all publicly traded stocks fundamentally related to the AI domain. For each, provide: current market value, estimated fair/intrinsic value, expected value in 5 years, and the fundamental reasoning behind each valuation. Use web search for current prices, financials, and analyst estimates. Present as a structured list."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": false,
+        "revisedNoAnswer": true,
+        "revisedKeeps": true,
+        "revisedNoAdd": true
+      },
+      "pass": false,
+      "ms": 1546,
+      "ttftMs": 1432,
+      "completionTokens": 238,
+      "promptTokens": 1828,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "code",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Sonnet 5.5 handles concurrency bugs better than Haiku",
+          "Medium effort needed for race-condition analysis",
+          "Keep thread: bug context is relevant"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "My Java order service sometimes double-charges customers under load. Here is the code:\npublic void pay(Order o) { if (!o.isPaid()) { gateway.charge(o); o.setPaid(true); repo.save(o); } }\nIt runs on 4 pods behind a load balancer. Why does this happen and how do I fix it properly? Please explain the root cause and provide a corrected implementation."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "powerbi-plan",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revised": true,
+        "revisedNoAnswer": true
+      },
+      "pass": true,
+      "ms": 1318,
+      "ttftMs": 1176,
+      "completionTokens": 224,
+      "promptTokens": 1768,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "writing",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Sonnet 5.5 balances detail and cost for planning tasks",
+          "Ask for a concise, phased migration plan to limit tokens",
+          "Save as an artifact for reuse across chats"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "Create a concise, phased migration plan to move our team's monthly reports from Excel to Power BI. Include key steps: data prep, model design, report rebuild, validation, rollout, and training. Note any assumptions about data sources, refresh needs, and governance. Output as a structured plan document I can save and share."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "schema-design",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revisedNoAnswer": true,
+        "revisedNoAdd": true
+      },
+      "pass": true,
+      "ms": 1506,
+      "ttftMs": 1235,
+      "completionTokens": 256,
+      "promptTokens": 1790,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "complex",
+        "task_type": "analysis",
+        "recommend": {
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "artifact",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Opus handles multi-step schema reasoning best",
+          "Ask for artifact to keep schema reusable",
+          "Batch follow-up questions in same chat"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "Design a database schema for a multi-tenant SaaS billing system covering usage-based pricing, invoices, credits, and proration. Provide the schema as a standalone artifact (SQL DDL or equivalent) with table definitions, keys, and indexes. For each major table, explain the design trade-offs (e.g., normalization vs. query performance, auditability vs. storage, flexibility vs. complexity). Include notes on handling currency, time zones, and tenant isolation. Do not assume a specific SQL dialect; note any dialect-specific choices."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "summarise-pasted",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true
+      },
+      "pass": true,
+      "ms": 1056,
+      "ttftMs": 1055,
+      "completionTokens": 146,
+      "promptTokens": 2542,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "summarise",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Haiku 5.5 is 5× cheaper than Opus for simple summaries",
+          "Low effort avoids extended thinking tokens"
+        ],
+        "est_relative_usage_saving": "high",
+        "revised_prompt": ""
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "news-today",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": false,
+        "tipsMatchThread": true,
+        "revisedNoAnswer": true
+      },
+      "pass": false,
+      "ms": 1232,
+      "ttftMs": 1232,
+      "completionTokens": 158,
+      "promptTokens": 1763,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "research",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": true,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Web search needed for live headlines",
+          "Ask for brief bullet list to save tokens"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "What are today's top headlines about AI regulation? Please provide a brief bullet-point summary with sources."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "capital-in-long-thread",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": true,
+        "revisedNoAnswer": true
+      },
+      "pass": true,
+      "ms": 1356,
+      "ttftMs": 995,
+      "completionTokens": 177,
+      "promptTokens": 1767,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "simple",
+        "task_type": "other",
+        "recommend": {
+          "model": "claude-haiku-5-5",
+          "effort": "low",
+          "workspace": "chat",
+          "fresh_chat": true,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "New chat avoids re-reading 48k tokens of unrelated history",
+          "Small model answers simple facts at 1/5 the usage cost",
+          "Low effort is enough for a one-line lookup"
+        ],
+        "est_relative_usage_saving": "high",
+        "revised_prompt": "What is the capital of Australia? Please give a one-sentence answer."
+      },
+      "raw": null
+    },
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "case": "debug-race",
+      "ok": true,
+      "error": null,
+      "checks": {
+        "json": true,
+        "complexity": true,
+        "tools": true,
+        "fresh": true,
+        "consistent": true,
+        "saving": true,
+        "tipsMax3": true,
+        "noAnswerLeak": true,
+        "noContradiction": true,
+        "noFormatTip": true,
+        "tipsMatchThread": false,
+        "revisedNoAnswer": true,
+        "revisedKeeps": true,
+        "revisedNoAdd": true
+      },
+      "pass": false,
+      "ms": 1226,
+      "ttftMs": 1037,
+      "completionTokens": 228,
+      "promptTokens": 1828,
+      "reasoningChars": 0,
+      "output": {
+        "complexity": "standard",
+        "task_type": "code",
+        "recommend": {
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "workspace": "chat",
+          "fresh_chat": false,
+          "output": "chat",
+          "tools_needed": false,
+          "schedule_candidate": false
+        },
+        "tips": [
+          "Medium model handles concurrency analysis better",
+          "Current thread context is relevant to the bug"
+        ],
+        "est_relative_usage_saving": "none",
+        "revised_prompt": "My Java order service sometimes double-charges customers under load. Here is the code:\npublic void pay(Order o) { if (!o.isPaid()) { gateway.charge(o); o.setPaid(true); repo.save(o); } }\nIt runs on 4 pods behind a load balancer. Why does this happen and how do I fix it properly? Please explain the root cause and provide a corrected code snippet using proper concurrency control."
+      },
+      "raw": null
+    }
+  ],
+  "summary": [
+    {
+      "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+      "reasoning": "off",
+      "variant": "free",
+      "cases": 20,
+      "allPass": 16,
+      "errors": 0,
+      "byCheck": {
+        "json": {
+          "pass": 20,
+          "of": 20
+        },
+        "complexity": {
+          "pass": 20,
+          "of": 20
+        },
+        "tools": {
+          "pass": 19,
+          "of": 19
+        },
+        "fresh": {
+          "pass": 19,
+          "of": 19
+        },
+        "consistent": {
+          "pass": 20,
+          "of": 20
+        },
+        "saving": {
+          "pass": 20,
+          "of": 20
+        },
+        "tipsMax3": {
+          "pass": 20,
+          "of": 20
+        },
+        "noAnswerLeak": {
+          "pass": 20,
+          "of": 20
+        },
+        "noContradiction": {
+          "pass": 20,
+          "of": 20
+        },
+        "noFormatTip": {
+          "pass": 18,
+          "of": 20
+        },
+        "tipsMatchThread": {
+          "pass": 18,
+          "of": 20
+        },
+        "revised": {
+          "pass": 6,
+          "of": 6
+        },
+        "revisedNoAnswer": {
+          "pass": 17,
+          "of": 17
+        },
+        "revisedKeeps": {
+          "pass": 2,
+          "of": 2
+        },
+        "revisedNoGuess": {
+          "pass": 1,
+          "of": 1
+        },
+        "revisedNoAdd": {
+          "pass": 8,
+          "of": 8
+        },
+        "codesOnly": {
+          "pass": 0,
+          "of": 0
+        }
+      },
+      "avgMs": 1460,
+      "avgTtftMs": 1237,
+      "avgCompletionTokens": 194,
+      "avgReasoningChars": 0
+    }
+  ],
+  "research": [],
+  "researchSummary": [],
+  "cases": [
+    {
+      "id": "dir-command",
+      "note": "seen live 2026-10-21: tips answered the question (use dir, add /b)",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "answerLeak": "\\bdir\\b|\\/b\\b|\\bls\\b|get-childitem|gci\\b"
+      }
+    },
+    {
+      "id": "list-files-on-haiku",
+      "note": "seen live 2026-10-24 (Ultra): already on Haiku, card said Saving: high and gave a thread-length tip in a new chat",
+      "modelLabel": "Haiku 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "revise": true,
+        "openChoice": [
+          "windows",
+          "linux",
+          "mac"
+        ],
+        "answerLeak": "\\bdir\\b|\\/b\\b|\\bls\\b|get-childitem|gci\\b"
+      }
+    },
+    {
+      "id": "time-now",
+      "note": "seen live 2026-10-27 (Ultra): \"what time it is\" was rewritten to \"What is the current time in UTC?\"",
+      "modelLabel": "Haiku 5.5 Low",
+      "thread": {
+        "turns": 1,
+        "approx_tokens": 600,
+        "title": "Claude models with internet and web search"
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "noAdd": "\\b(UTC|GMT|IST|PST|PDT|EST|EDT|CET|BST)\\b"
+      }
+    },
+    {
+      "id": "reformat-table",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": false,
+        "allowFormat": true,
+        "keep": [
+          "red 3",
+          "blue 5",
+          "green 2",
+          "yellow 7"
+        ],
+        "answerLeak": "\\|\\s*red|\\bcolou?r\\s*\\|"
+      }
+    },
+    {
+      "id": "user-guide-in-thread",
+      "note": "seen live 2026-10-22: refers back to the conversation",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "standard"
+        ],
+        "tools": false,
+        "fresh": false
+      }
+    },
+    {
+      "id": "stocks-on-haiku",
+      "note": "seen live 2026-10-22: complex/research but recommended Haiku, saving medium",
+      "modelLabel": "Haiku 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": true,
+        "fresh": true,
+        "revise": true,
+        "noAdd": "\\btop \\d+|\\bexclud|\\bDCF\\b|multiples|semiconductor",
+        "answerLeak": "nvidia|nvda|msft|microsoft|p\\/e|discounted cash"
+      }
+    },
+    {
+      "id": "stocks-on-opus",
+      "note": "seen live 2026-10-22: tip told user to switch to Sonnet while card said Opus",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 9,
+        "approx_tokens": 20000,
+        "title": "Productivity tools"
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": true,
+        "fresh": true,
+        "revise": true,
+        "noAdd": "\\btop \\d+|\\bexclud|\\bDCF\\b|multiples|semiconductor",
+        "answerLeak": "nvidia|nvda|msft|microsoft|p\\/e|discounted cash"
+      }
+    },
+    {
+      "id": "schema-design",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "complex"
+        ],
+        "tools": false,
+        "fresh": false,
+        "noAdd": "ledger|denormali|usage_events|\\(tenants|subscriptions,",
+        "answerLeak": "tenant_id|foreign key|uuid"
+      }
+    },
+    {
+      "id": "powerbi-plan",
+      "note": "seen live 2026-10-25 (Ultra): one-line draft expanded into a detailed brief; the user wants this level of detail",
+      "modelLabel": "Haiku 5.5 Low",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "complex",
+          "standard"
+        ],
+        "tools": false,
+        "fresh": false,
+        "revise": true
+      }
+    },
+    {
+      "id": "capital-in-long-thread",
+      "modelLabel": "Opus 5.5 High",
+      "thread": {
+        "turns": 32,
+        "approx_tokens": 48000,
+        "title": "Python data pipeline refactor"
+      },
+      "expect": {
+        "complexity": [
+          "simple"
+        ],
+        "tools": false,
+        "fresh": true,
+        "answerLeak": "canberra|sydney"
+      }
+    },
+    {
+      "id": "news-today",
+      "modelLabel": "Sonnet 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple",
+          "standard"
+        ],
+        "tools": true,
+        "fresh": false
+      }
+    },
+    {
+      "id": "summarise-pasted",
+      "modelLabel": "Opus 5.5 Medium",
+      "thread": {
+        "turns": 0,
+        "approx_tokens": 0,
+        "title": null
+      },
+      "expect": {
+        "complexity": [
+          "simple",
+          "standard"
+        ],
+        "tools": false,
+        "fresh": false,
+        "allowFormat": true,
+        "answerLeak": "margins? (will )?stabili[sz]e|logistics"
+      }
+    },
+    {
+      "id": "debug-race",
+      "modelLabel": "Haiku 5.5 Low",
+      "thread": {
+        "turns": 4,
+        "approx_tokens": 6000,
+        "title": "Order service bug"
+      },
+      "expect": {
+        "complexity": [
+          "standard",
+          "complex"
+        ],
+        "tools": false,
+        "fresh": false,
+        "keep": [
+          "gateway.charge(o)",
+          "o.setPaid(true)"
+        ],
+        "noAdd": "race condition|constraint|thread-safe|distributed",
+        "answerLeak": "idempoten|lock|synchroni[sz]ed|transaction"
+      }
+    }
+  ]
+}

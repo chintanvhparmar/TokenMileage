@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.zip
+.env
+*.local.json
+
+# Local tooling (personal paths)
+.claude/
+.playwright-mcp/
